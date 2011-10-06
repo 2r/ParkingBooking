@@ -1,0 +1,312 @@
+.LIST_VIEW{
+	/*width:510px;*/
+	clear:both;
+	font-weight:bold;
+	border-bottom:solid 1px #000;
+}
+
+	.LIST_VIEW .LABEL{
+		text-align:top;
+	}
+	.LIST_VIEW .LAST_NAME_LABEL{
+		width:195px;
+		margin-right:5px;
+		float:left;
+	}
+	.LIST_VIEW .DESCRIPTION_LABEL{
+		width:269px;
+		margin-right:5px;
+		float:left;
+	}
+	.LIST_VIEW .TX_WPAPCOAPARKING_DEPARTMENT_LABEL{
+		width:125px;
+		margin-right:5px;
+		float:left;
+	}
+	.LIST_VIEW .TX_WPAPCOAPARKING_SERVICES_LABEL{
+		width:125px;
+		float:left;
+	}
+
+
+
+.LIST_VIEW_ITEM{
+	padding:10px 0px;
+	border-bottom: solid 1px #000;
+}
+	.LIST_VIEW_ITEM .FIELD{
+		text-align:top;
+	}
+	.LIST_VIEW_ITEM .LAST_NAME{
+		width:195px;
+		margin-right:5px;
+		float:left;
+	}
+	.LIST_VIEW_ITEM .DESCRIPTION{
+		width:269px;
+		margin-right:5px;
+		float:left;
+	}
+	.LIST_VIEW_ITEM .DESCRIPTION p{
+		margin-top: 0;
+		font-size: 100%;
+		line-height: normal;
+	}
+	.LIST_VIEW_ITEM .TX_WPAPCOAPARKING_DEPARTMENT{
+		width:125px;
+		margin-right:5px;
+		float:left;
+	}
+	.LIST_VIEW_ITEM .TX_WPAPCOAPARKING_SERVICES{
+		width:125px;
+		float:left;
+	}
+
+	.LIST_VIEW_ITEM a{
+		text-decoration:none;
+		color:#00ADEF;
+	}
+
+	.LIST_VIEW_ITEM a:hover{
+		color:#04385A;
+	}
+
+
+	.SINGLE_VIEW a{
+		text-decoration:none !important;
+		color:#00ADEF !important;
+	}
+
+	.SINGLE_VIEW a:hover{
+		color:#04385A !important;
+	}
+
+	.SINGLE_VIEW p{
+		margin-top: 0 !important;
+		font-size: 10px !important;
+	}
+
+	.SINGLE_VIEW h1{
+		margin-bottom: 10px !important;
+		width: 580px;
+	}
+
+	.SINGLE_VIEW table td{
+		font-size: 10px !important;
+	}
+
+	.SINGLE_VIEW_LEFT{
+		float:left;
+		width:450px;
+		margin-right:20px;
+	}
+	.SINGLE_VIEW_RIGHT{
+		float:left;
+		width:200px;
+		position: relative;
+	}
+	.SINGLE_VIEW_RIGHT .rentFormOnline {
+		background: transparent url('../site_images/apcoaparking/APCOA-DP-Button.png') no-repeat top left;
+		padding: 120px 120px 0 0;
+		z-index: 1;
+		position: absolute;
+		top: -60px;
+		right: -30px;
+		display: block;
+		height: 0;
+		width: 0;
+		text-indent: 120px;
+		overflow:hidden;
+	}
+
+
+	.SINGLE_VIEW_ADDRESS{
+		margin-bottom:10px;
+	}
+
+	.SINGLE_VIEW_CONTACT{
+		margin-bottom:10px;
+	}
+
+	.SINGLE_VIEW_INFO{
+		margin-bottom:10px;
+	}
+
+	.SINGLE_VIEW_GOOGLE_MAP{
+		margin-bottom:10px;
+	}
+
+	.SINGLE_VIEW_BACK{
+		margin-bottom:10px;
+	}
+
+	.SINGLE_VIEW_FORM{
+		margin-bottom:10px;
+		background: #E5E6E8;
+	}
+	.formBlock { clear: both; margin-bottom: 5px; }
+	.formBlock input { width: 142px; padding: 2px; border: 0; }
+	.formBlock input.short { width: 42px; }
+	.formBlock input.middle { width: 56px; }
+	.formBlock input.right { width: 120px; }
+	.formBlock select { padding: 2px; border: 0; }
+	.formBlock select.short { width: 42px; }
+	.inpLabel { display: block; float: left; width: 85px; height: 22px; line-height: 22px; white-space: nowrap; }
+	.inpLabelRight { display: block; float: left; width: 105px; height: 22px; line-height: 22px; white-space: nowrap; }
+	.inpLabelInside { height: 22px; padding-left: 15px; line-height: 22px; }
+	.inpLabelInside_right { display: block; height: 22px; float:right; padding-right: 15px; line-height: 22px; vertical-align: baseline; }
+	.btnSubmit { width: 200px; padding: 3px 0; background: #00375A; border: 0; font-weight: bold; color: #FFF; cursor: pointer; }
+	.private, .company { display: none; }
+	#formErrors{ padding: 5px; font-weight:bold; color: red; border: 1px solid red; margin-right: 10px; margin-bottom: 5px; text-align: center;}
+
+
+	.INFOBOX_VIEW h1{
+		width:370px
+	}
+
+	.INFOBOX_VIEW a{
+		text-decoration:none;
+		color:#00ADEF;
+	}
+
+	.INFOBOX_VIEW a:hover{
+		color:#04385A;
+	}
+
+
+	.INFOBOX_VIEW_LEFT{
+		float:left;
+		width:200px;
+		margin-right:10px;
+		white-space:normal;
+	}
+	.INFOBOX_VIEW_RIGHT{
+		float:left;
+		width:160px;
+		white-space:normal;
+	}
+
+
+	.INFOBOX_VIEW_ADDRESS{
+		margin-bottom:10px;
+	}
+
+	.INFOBOX_VIEW_CONTACT{
+		margin-bottom:10px;
+	}
+
+	.INFOBOX_VIEW_INFO{
+		margin-bottom:10px;
+	}
+
+	.INFOBOX_VIEW_GOOGLE_MAP{
+		margin-bottom:10px;
+	}
+
+	.INFOBOX_VIEW_BACK{
+		margin-bottom:10px;
+	}
+
+	.gmapDir{
+		position:relative;
+		top:-10px;
+	}
+
+	.gmapDir a{
+		text-decoration:none;
+		color:#00ADEF;
+	}
+
+	.gmapDir a:hover{
+		color:#04385A;
+	}
+
+	select.select_city{
+		width:168px;
+		font-size:10px;
+	}
+	option.blank{
+		background:#fff;
+		color:#04385A;
+	}
+	option.odd{
+		background:#e8f4f9;
+		color:#00adef;
+	}
+	option.even{
+		background:#fff;
+		color:#00adef;
+	}
+
+.LOCATION_FORM label{
+	width:150px;
+	display:block;
+}
+
+.LOCATION_FORM input,select{
+	border:solid 1px #04385A;
+	width:200px;
+}
+
+.LINKLIST_VIEW { margin-top: 10px; }
+
+.LINKLIST_VIEW_TAB{
+	float:left;
+	width:33%;
+}
+
+
+.LINKLIST_VIEW_TAB a:link, .LINKLIST_VIEW_TAB a:hover, .LINKLIST_VIEW_TAB a:active, .LINKLIST_VIEW_TAB a:visited{
+	text-decoration:none;
+	color:#00ADEF;
+}
+
+.LINKLIST_VIEW_TAB a:hover{
+	color:#04385A;
+}
+
+.LINKLIST_VIEW_CLEAR{
+	clear:both;
+	width:0;
+	height:0;
+	overflow:hidden;
+}
+
+.LINKLIST_VIEW_TAB .LINKLIST_ITEM_SELECTED a:link, .LINKLIST_VIEW_TAB .LINKLIST_ITEM_SELECTED a:hover, .LINKLIST_VIEW_TAB .LINKLIST_ITEM_SELECTED a:active, .LINKLIST_VIEW_TAB .LINKLIST_ITEM_SELECTED a:visited{
+	text-decoration:none;
+	color:#04385A;
+}
+
+.LINKLIST_VIEW_TAB .LINKLIST_ITEM_SELECTED a:hover{
+	color:#00ADEF;
+}
+
+.LINKLIST_VIEW_SELECTED_CITY{
+	margin:0 0 10px 0;
+}
+
+.LINKLIST_CITY_SELECTED_CSS{
+	display:none;
+}
+
+.LINKLIST_VIEW_SELECTED_CITY_NAME{
+	font-weight:bold;
+}
+
+.LINKLIST_VIEW_SELECTED_CITY_SHOWALL{
+	margin-top: 10px;
+}
+
+.LINKLIST_VIEW_SELECTED_CITY_SHOWALL a:link, .LINKLIST_VIEW_SELECTED_CITY_SHOWALL a:hover, .LINKLIST_VIEW_SELECTED_CITY_SHOWALL a:active, .LINKLIST_VIEW_SELECTED_CITY_SHOWALL a:visited{
+	text-decoration:none;
+	color:#00ADEF;
+}
+
+.LINKLIST_VIEW_SELECTED_CITY_SHOWALL a:hover{
+	color:#04385A;
+}
+
+.LIST_VIEW_DESC { display: none; padding: 10px; background: #E6E7E9; color: #757473; }
+.SINGLE_VIEW_DESC { display: none; padding: 10px; background: #E6E7E9; color: #757473; }
+.LIST_VIEW_DESC p, .SINGLE_VIEW_DESC p { margin-bottom: 10px; }
+.LIST_VIEW_DESC strong, .SINGLE_VIEW_DESC strong { color: #000; }

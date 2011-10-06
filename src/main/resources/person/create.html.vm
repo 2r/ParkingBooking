@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <style>.error { color: red; }</style>
+  </head>
+
+  #foreach ( $error in ${errors.entrySet()} )
+    <div class='error'>${error.key} ${error.value}</div>
+  #end
+
+  <form method='post' action='createPerson.html'>
+    <p>
+      <label>First name:</label>
+      <input type='text' name='first_name' value='${first_name}' />
+    </p>
+    <p>
+      <label>Last name:</label>
+      <input type='text' name='last_name' value='${last_name}' />
+    </p>
+    <p>
+      <label>Birth date:</label>
+      <input type='text' name='birth_date' value='${birth_date}' />
+    </p>
+    <input type='submit' name='createPerson' value='Create person' />
+  </form>
+</html>

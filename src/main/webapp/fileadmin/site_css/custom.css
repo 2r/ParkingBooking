@@ -1,0 +1,16 @@
+.PARKING_PLACE {
+	float: right;
+	widht: 40%;	
+}
+
+.DISTANCE {
+	widht: 25%;
+}
+
+.PRICE {
+	widht: 25%;
+}
+
+.BUTTON {
+	widht: 10%;
+}

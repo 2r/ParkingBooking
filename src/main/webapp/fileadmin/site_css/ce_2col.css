@@ -1,0 +1,46 @@
+.ce_2col_wrapper_all{
+	width:520px;
+	overflow:hidden;
+	background:transparent;
+}
+
+.ce_2col_wrapper_all .COL_LEFT{
+	float:left;
+	width:420px;
+	padding:0px;
+	margin:0px;
+	color:#000;
+	background:transparent;
+}
+
+.ce_2col_wrapper_all .COL_LEFT .CONTENT_ELEMENT{
+/*	border-bottom:groove 2px #B27F7F;*/
+	padding:0px;
+	margin:0px;
+}
+
+.wrapper_right .ce_2col_wrapper_all .COL_LEFT .CONTENT_ELEMENT .csc-textpic{
+	padding:0px;
+	margin:0px;
+}
+
+/***********************************/
+.ce_2col_wrapper_all .COL_RIGHT{
+	display:inline;
+	padding:0px;
+	margin:0px;
+	width:100px;
+	float:right;
+}
+
+.ce_2col_wrapper_all .COL_RIGHT .CONTENT_ELEMENT{
+/*	border-bottom:groove 2px #B27F7F;*/
+	padding:0px;
+	margin:0px;
+}
+
+
+.wrapper_right .ce_2col_wrapper_all .COL_RIGHT .CONTENT_ELEMENT .csc-textpic{
+	padding:0px;
+	margin:0px;
+}

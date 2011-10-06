@@ -1,0 +1,172 @@
+.wrapper_search_field{
+	display:inline;
+}
+
+.wrapper_search_field input{
+	display:inline;
+	width:92px;
+}
+
+.wrapper_search_button{
+	margin-left:2px;
+	display:inline;
+}
+
+.wrapper_search_button input{
+	margin:0;
+	padding:0;
+	font-size:9px;
+}
+
+.tx-indexedsearch .tx-indexedsearch-browsebox LI {
+	display:inline;
+	margin-right:5px;
+}
+
+.tx-indexedsearch .tx-indexedsearch-searchbox INPUT.tx-indexedsearch-searchbox-button {
+	border:1px solid #04385A;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:9px;
+	background-color:#E7E7E9;
+}
+
+.tx-indexedsearch .tx-indexedsearch-searchbox INPUT.tx-indexedsearch-searchbox-sword {
+	border:1px solid #04385A;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:9px;
+	background-color:#E7E7E9;
+}
+
+.tx-indexedsearch .tx-indexedsearch-whatis {
+	margin-top:10px;
+	margin-bottom:5px;
+}
+
+.tx-indexedsearch .tx-indexedsearch-whatis .tx-indexedsearch-sw {
+	font-weight:bold;
+	font-style:italic;
+}
+
+.tx-indexedsearch .tx-indexedsearch-noresults {
+	text-align:center;
+	font-weight:bold;
+}
+
+.tx-indexedsearch .tx-indexedsearch-res TD.tx-indexedsearch-descr {
+	font-style:italic;
+}
+
+.tx-indexedsearch .tx-indexedsearch-res .tx-indexedsearch-descr .tx-indexedsearch-redMarkup {
+	color:#00ADEF;
+}
+
+.tx-indexedsearch .tx-indexedsearch-res .tx-indexedsearch-info {
+	background:#E5E6E8;
+}
+
+.tx-indexedsearch .tx-indexedsearch-res .tx-indexedsearch-secHead {
+	margin-top:20px;
+	margin-bottom:5px;
+}
+
+.tx-indexedsearch .tx-indexedsearch-res .tx-indexedsearch-secHead H2 {
+	margin-top:0px;
+	margin-bottom:0px;
+}
+
+.tx-indexedsearch .tx-indexedsearch-res .tx-indexedsearch-secHead TD {
+	background:#cccccc;
+	vertical-align:middle;
+}
+
+.tx-indexedsearch .tx-indexedsearch-res .noResume {
+	color:#666666;
+}
+
+.tx-indexedsearch .tx-indexedsearch-category {
+	background:#cccccc;
+	font-size:16px;
+	font-weight:bold;
+}
+
+/* Additional styles, needed for the tableless template_css.tmpl (styles don't conflict with the original template) */
+.tx-indexedsearch .res-tmpl-css {
+	clear:both;
+	margin-bottom:1em;
+}
+
+.tx-indexedsearch .searchbox-tmpl-css LABEL {
+	margin-right:1em;
+	width:10em;
+	float:left;
+}
+
+.tx-indexedsearch .result-count-tmpl-css, .tx-indexedsearch .percent-tmpl-css {
+	letter-spacing:0;
+	font-weight:normal;
+	margin-top:-1.2em;
+	float:right;
+}
+
+.tx-indexedsearch .info-tmpl-css dt, .tx-indexedsearch dl.info-tmpl-css dd {
+	float:left;
+}
+
+.tx-indexedsearch .info-tmpl-css dd.item-mtime {
+	float:none;
+}
+
+.tx-indexedsearch .info-tmpl-css dd.item-path {
+	float:none;
+}
+
+.tx-indexedsearch-form{
+	display:inline;
+}
+
+.tx-indexedsearch-search-submit{
+	display:inline;
+}
+
+.tx-indexedsearch a:link{
+	color: #00243D;
+	text-decoration: underline;
+}
+
+.tx-indexedsearch a:hover{
+	color: #04385A;
+	text-decoration: none;
+}
+
+.tx-indexedsearch a:visited{
+	color: #00243D;
+	text-decoration: underline;
+}
+
+.tx-indexedsearch a:active{
+	color: #04385A;
+	text-decoration: none;
+}
+
+.tx-indexedsearch-icon, tx-indexedsearch-result-number{
+	display:none;
+}
+
+.tx-indexedsearch-res h1{
+	font-size: 10px;
+	font-weight: bold;
+	color: #666666;
+	margin-top: 22px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	width: 520px;
+	padding: 2px 3px 2px 0px;
+	clear: both;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: dotted;
+	border-bottom-style: dotted;
+	border-top-color: #666666;
+	border-bottom-color: #666666; 
+}

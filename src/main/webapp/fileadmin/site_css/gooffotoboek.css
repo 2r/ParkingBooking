@@ -1,0 +1,22 @@
+.tx-gooffotoboek-pi1 a:link{
+	color: #999999;
+	text-decoration: underline;
+}
+
+.tx-gooffotoboek-pi1 a:hover{
+	color: #04385A;
+	text-decoration: none;
+}
+.tx-gooffotoboek-pi1 a:visited{
+	color: #999999;
+	text-decoration: underline;
+}
+
+.tx-gooffotoboek-pi1 a:active{
+	color: #04385A;
+	text-decoration: none;
+}
+
+.tx-gooffotoboek-pi1 .nav{
+	margin:5px 0px;
+}
