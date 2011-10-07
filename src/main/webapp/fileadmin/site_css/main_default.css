@@ -812,7 +812,7 @@ body, h1, h2, h3, h4, h5, h6, div, p, table, td, ul, ol, li, dd, dt, dl, blockqu
 .DISTANCE {
 	float: left;
 	height: 75px;
-	width: 270px;
+	width: 260px;
 	background-color: #F5F5F5;
 	border: 3px solid;
 	border-color: #D4D4D4;

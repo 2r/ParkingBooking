@@ -7,6 +7,14 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link rel="stylesheet" type="text/css" href="fileadmin/site_css/MENU_HEAD_3COL.css" media="all" />
 	<link href="fileadmin/site_css/main.css" rel="stylesheet" type="text/css" />
+	<link type="text/css" href="fileadmin/site_css/jquery-ui-1.8.16.custom.css" rel="Stylesheet" />	
+	<script type="text/javascript" src="fileadmin/site_js/jquery-1.6.2.min.js"></script>
+	<script type="text/javascript" src="fileadmin/site_js/jquery-ui-1.8.16.custom.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$( "#tabs" ).tabs();
+		});	
+	</script>
 	<title>EuroPark Norge - Online Booking</title>
 </head>
 
@@ -23,12 +31,19 @@
 					<div class="MENU_LEFT"><ul class="LEV_1"><li><a href="no/right-top/kontakt-europark.html" onfocus="blurLink(this);">Kontakt EuroPark</a></li><li><a href="no/right-top/om-europark.html" onfocus="blurLink(this);">Om EuroPark</a></li><li><a href="no/right-top/nyheter.html" onfocus="blurLink(this);">Nyheter</a></li></ul></div>
 					<div class="clearing"></div>
 				</div>
-				<div class="MENU_HEAD"><ul><li><a href="no/right/lufthavnparkering.html" onfocus="blurLink(this);">Lufthavnparkering</a><ul><li><a href="no/right/lufthavnparkering/alta-lufthavn.html" onfocus="blurLink(this);">Alta Lufthavn</a><li><a href="no/right/lufthavnparkering/bergen-lufthavn.html" onfocus="blurLink(this);">Bergen Lufthavn</a><li><a href="no/right/lufthavnparkering/bodoe-lufthavn.html" onfocus="blurLink(this);">Bodø Lufthavn</a><li><a href="no/right/lufthavnparkering/haugesund-lufthavn.html" onfocus="blurLink(this);">Haugesund Lufthavn</a><li><a href="no/right/lufthavnparkering/oslo-lufthavn.html" onfocus="blurLink(this);">Oslo Lufthavn</a><li><a href="no/right/lufthavnparkering/sandefjord-lufthavn.html" onfocus="blurLink(this);">Sandefjord Lufthavn</a><li><a href="no/right/lufthavnparkering/stavanger-lufthavn.html" onfocus="blurLink(this);">Stavanger Lufthavn</a><li><a href="no/right/lufthavnparkering/tromsoe-lufthavn.html" onfocus="blurLink(this);">Tromsø Lufthavn</a><li><a href="no/right/lufthavnparkering/trondheim-lufthavn.html" onfocus="blurLink(this);">Trondheim Lufthavn</a></ul></li><li><a href="no/right/parkering.html" onfocus="blurLink(this);">Parkering</a><ul><li><a href="no/right/parkering/aker-brygge.html" onfocus="blurLink(this);">Aker Brygge</a><li><a href="no/right/parkering/asker.html" onfocus="blurLink(this);">Asker</a><li><a href="no/right/parkering/bakklandet.html" onfocus="blurLink(this);">Bakklandet</a><li><a href="no/right/parkering/byporten.html" onfocus="blurLink(this);">Byporten</a><li><a href="no/right/parkering/frydenlund.html" onfocus="blurLink(this);">Frydenlund</a><li><a href="no/right/parkering/galleriet-oest.html" onfocus="blurLink(this);">Galleriet Øst</a><li><a href="no/right/parkering/galleriet-vest.html" onfocus="blurLink(this);">Galleriet Vest</a><li><a href="no/right/parkering/grand-garasjen.html" onfocus="blurLink(this);">Grand Garasjen</a><li><a href="no/right/parkering/gunerius.html" onfocus="blurLink(this);">Gunerius</a><li><a href="no/right/parkering/groenlands-torg.html" onfocus="blurLink(this);">Grønlands Torg</a><li><a href="no/right/parkering/it-fornebu.html" onfocus="blurLink(this);">IT Fornebu</a><li><a href="no/right/parkering/munkedamsveien-37.html" onfocus="blurLink(this);">Munkedamsveien 37</a><li><a href="no/right/parkering/norges-varemesse.html" onfocus="blurLink(this);">Norges Varemesse</a><li><a href="no/right/parkering/nydalen.html" onfocus="blurLink(this);">Nydalen</a><li><a href="no/right/parkering/oslo-s.html" onfocus="blurLink(this);">Oslo S </a><li><a href="no/right/parkering/paleet.html" onfocus="blurLink(this);">Palèet</a><li><a href="no/right/parkering/schweigaardsgate-28.html" onfocus="blurLink(this);">Schweigaardsgate 28</a><li><a href="no/right/parkering/sentrum.html" onfocus="blurLink(this);">Sentrum</a><li><a href="no/right/parkering/spektrum.html" onfocus="blurLink(this);">Spektrum</a><li><a href="no/right/parkering/vestre-vika.html" onfocus="blurLink(this);">Vestre Vika</a></ul></li><li><a href="no/right/prosjektutvikling.html" onfocus="blurLink(this);">Prosjektutvikling</a><ul><li><a href="no/right/prosjektutvikling/kontakt.html" onfocus="blurLink(this);">Kontakt</a></li></ul></li></ul></div>
 			</div>
 
 			<div class="wrapper_right">
 				<div class="CONTENT">
-					<div class="PARKINGOPTS clearfix">
+				
+				<div id="tabs">
+					<ul>
+						<li><a href="#tabs-1">Bestilling</a></li>
+						<li><a href="#tabs-2">Viktig informasjon</a></li>
+						<li><a href="#tabs-3">Spørsmål og svar</a></li>
+					</ul>
+					<div id="tabs-1">
+						<div class="PARKINGOPTS clearfix">
 						<form action="">
 						<div class="sortoption">
 							<p>Sorter på:
@@ -161,6 +176,22 @@
 						</ul>
 						</form>
 					</div>
+						
+						
+						
+					</div>
+					<div id="tabs-2">
+						<p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+					</div>
+					<div id="tabs-3">
+						<p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+						<p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+					</div>
+				</div>
+				
+				
+				
+					
 					
 				</div>	
 			</div>
