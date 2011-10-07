@@ -767,6 +767,10 @@ body, h1, h2, h3, h4, h5, h6, div, p, table, td, ul, ol, li, dd, dt, dl, blockqu
 /*************************************************/
 /*************************************************/
 
+.sortoption {
+	margin-top: 5px;
+}
+
 .PARKINGOPT {
 	margin-buttom: 3px;
 	width: 949px;
@@ -779,7 +783,10 @@ body, h1, h2, h3, h4, h5, h6, div, p, table, td, ul, ol, li, dd, dt, dl, blockqu
     behavior: url(fileadmin/site_images/border-radius.htc); **/
 }
 
-.PARKINGOPTS ul { list-style-type: none; }
+.PARKINGOPTS ul { 
+	margin-top: 10px;
+	list-style-type: none; 
+}
 
 .PARKING_PLACE {
 	float: left;
@@ -843,7 +850,6 @@ body, h1, h2, h3, h4, h5, h6, div, p, table, td, ul, ol, li, dd, dt, dl, blockqu
 
 .pricetext {
 	color: #9A75FF;
-	
 	font-size: 20px;
 	text-align: center;
 }
@@ -854,7 +860,7 @@ body, h1, h2, h3, h4, h5, h6, div, p, table, td, ul, ol, li, dd, dt, dl, blockqu
 	width: 131px;
 }
 
-.BUTTON img {
+.BUTTON input {
 	margin-left: 10px;
 	margin-top: 25px;
 }
