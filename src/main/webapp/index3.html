@@ -7,6 +7,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link rel="stylesheet" type="text/css" href="fileadmin/site_css/MENU_HEAD_3COL.css" media="all" />
 	<link href="fileadmin/site_css/main.css" rel="stylesheet" type="text/css" />
+	<link href="fileadmin/site_css/datepicker.css" rel="stylesheet" type="text/css" />
 	
 	<link type="text/css" href="fileadmin/site_css/jquery-ui-1.8.16.custom.css" rel="Stylesheet" />	
 	<script type="text/javascript" src="fileadmin/site_js/jquery-1.6.2.min.js"></script>
@@ -16,6 +17,9 @@
 
 		// Datepicker
 		$('#datepicker').datepicker({
+			inline: true
+		});
+		$('#datepicker2').datepicker({
 			inline: true
 		});
 		
@@ -52,74 +56,28 @@
 
 			<div class="wrapper_right">
 				<div class="CONTENT">
-				<div class="PARKINGOPTS">
+				<div class="DATEOPT">
 					<ul>
   						<li>
-							<div class="PARKINGOPT clearfix">
+							<div class="DATEOPTS clearfix">
 					
-							<div class="PARKING_PLACE">
-								<div class="parking_img">
-									<img src="fileadmin/site_images/parkingplaces/p1.gif"/>
-								</div>
-								<div class="parking_text">
-									<p>Business eller fritidsparkering for reisende som ønsker enkel, effektiv og bekvem parkering.</p>
-									<a href="http://www.steria.no/">Mer info og kart</a>
-								</div>
+							<div class="DATE_from">
+									<div id="datepicker", name="date1 ">Fra</div>
 							</div>
-							<div class="DISTANCE">
-								<div class=distance_img>
-									<img src="fileadmin/site_images/transport/bus.png"/>
-								</div>
-								<div class=distance_text>
-									<p>Skyttelbuss:</p>
-									<p>hvert 15. min</p>
-								</div>
+							<div class="DATE_to">
+									<div id="datepicker2", name="date2 ">Til</div>
 							</div>
-							<div class="PRICE">
-								<p>Pris inkl. mva:</p>
-								<p>1432,-</p>
-							</div>
-							<div class="BUTTON">
-								<img src="fileadmin/site_images/book-now.png"/>
-							</div>  
-							</div>						
-  						</li>
-  						<li>
-  						<div class="PARKINGOPT clearfix">
-							<div class="PARKING_PLACE">
-								<div class="parking_img">
-									<img src="fileadmin/site_images/parkingplaces/p2.gif"/>
-								</div>
-								<div class="parking_text">
-									<p>Business eller fritidsparkering for reisende som ønsker enkel, effektiv og bekvem parkering.</p>
-									<a href="http://www.steria.no/">Mer info og kart</a>
-								</div>
-							</div>
-							<div class="DISTANCE">
-								<div class=distance_img>
-									<img src="fileadmin/site_images/transport/walk.png"/>
 
-								</div>
-								<div class=distance_text>
-									<p>Gangavstand:</p>
-									<p>1-5 min å gå.</p>
-								</div>
-							</div>
-							<div class="PRICE">
-								<div id="datepicker"></div>
-							</div>
-							<div class="BUTTON">
-								<img src="fileadmin/site_images/book-now.png"/>
-							</div> 
-							</div> 						
+							</div>	
+			
   						</li>
   						
+  						
 					</ul>
-					
-					
-					
-					
 				</div>
+				
+				
+				
 				</div>
 			
 					
