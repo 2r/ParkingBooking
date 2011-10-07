@@ -1,0 +1,37 @@
+/*************************************************/
+/*************************************************/
+/*************************************************/
+
+.DATEOPT {
+	margin-buttom: 3px;
+	width: 95%;
+	height: 300px;
+	background-color: #F5F5F5;
+	border: 3px solid;
+	border-color: #D4D4D4; 
+    /**
+    -opera-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    behavior: url(fileadmin/site_images/border-radius.htc); **/
+}
+
+.DATEOPTS ul { list-style-type: none; }
+
+.DATE_from {
+	float: left;
+	height: 250px;
+	width: 250px;
+	margin-right: 20px;
+
+}
+
+.DATE_to {
+	float: right;
+	height: 250px;
+	width: 250px;
+	margin-right: 20px;
+
+}
+
