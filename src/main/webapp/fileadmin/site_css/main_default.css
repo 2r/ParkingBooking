@@ -768,7 +768,6 @@ body, h1, h2, h3, h4, h5, h6, div, p, table, td, ul, ol, li, dd, dt, dl, blockqu
 /*************************************************/
 
 .PARKINGOPT {
-	background-color: #F5F5F5;
 	margin-buttom: 3px;
 	width: 949px;
 	height: 81px;
@@ -783,12 +782,13 @@ body, h1, h2, h3, h4, h5, h6, div, p, table, td, ul, ol, li, dd, dt, dl, blockqu
 .PARKINGOPTS ul { list-style-type: none; }
 
 .PARKING_PLACE {
+	float: left;
 	height: 75px;
+	width: 391px;
 	margin-right: 2px;
+	background-color: #F5F5F5;
 	border: 3px solid;
 	border-color: #D4D4D4; 
-	float: left;
-	width: 391px;
 }
 
 .parking_img {
@@ -801,14 +801,19 @@ body, h1, h2, h3, h4, h5, h6, div, p, table, td, ul, ol, li, dd, dt, dl, blockqu
 	width: 75%
 }
 
+.subheading {
+	font-weight: bold;
+	font-size: 11px;
+}
 
 .DISTANCE {
+	float: left;
 	height: 75px;
+	width: 270px;
+	background-color: #F5F5F5;
 	border: 3px solid;
 	border-color: #D4D4D4;
 	margin-right: 2px;
-	float: left;
-	width: 270px;
 }
 
 .DISTANCE img {
@@ -827,18 +832,26 @@ body, h1, h2, h3, h4, h5, h6, div, p, table, td, ul, ol, li, dd, dt, dl, blockqu
 }
 
 .PRICE {
+	float: left;
 	height: 75px;
+	padding-left: 5px;
+	width: 130px;
+	background-color: #F5F5F5;
 	border: 3px solid;
 	border-color: #D4D4D4;
-	float: left;
-	width: 135px;
+}
+
+.pricetext {
+	color: #9A75FF;
+	
+	font-size: 20px;
+	text-align: center;
 }
 
 .BUTTON {
-	height: 81px;
 	float: left;
+	height: 81px;
 	width: 131px;
-	background-color: #FFFFFF;
 }
 
 .BUTTON img {
