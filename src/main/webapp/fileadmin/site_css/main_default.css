@@ -32,7 +32,7 @@ body, h1, h2, h3, h4, h5, h6, div, p, table, td, ul, ol, li, dd, dt, dl, blockqu
 
 	.wrapper_all{
 		width: 1004px;
-		margin: 0 auto 30px auto;
+		margin: 0 auto;
 	}
 	.wrapper_all_2{
 		padding-left: 18px;
@@ -55,6 +55,7 @@ body, h1, h2, h3, h4, h5, h6, div, p, table, td, ul, ol, li, dd, dt, dl, blockqu
 		width: 1004px;
 		height: 12px;
 		background: url("../site_images/bg-shadow-btm.png") no-repeat;
+		margin: 0 auto 30px;
 	}
 	.wrapper_head{
 		width: 949px;
@@ -775,16 +776,11 @@ body, h1, h2, h3, h4, h5, h6, div, p, table, td, ul, ol, li, dd, dt, dl, blockqu
 	margin-buttom: 3px;
 	width: 949px;
 	height: 81px;
-    /**
-    -opera-border-radius: 7px;
-    -moz-border-radius: 7px;
-    -webkit-border-radius: 7px;
-    border-radius: 7px;
-    behavior: url(fileadmin/site_images/border-radius.htc); **/
 }
 
 .PARKINGOPTS ul { 
 	margin-top: 10px;
+	padding-buttom: 50px;
 	list-style-type: none; 
 }
 
