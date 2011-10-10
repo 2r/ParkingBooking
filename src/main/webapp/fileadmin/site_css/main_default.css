@@ -165,17 +165,17 @@ body, h1, h2, h3, h4, h5, h6, div, p, table, td, ul, ol, li, dd, dt, dl, blockqu
 		/********************************/
 		/********************************/
 
-		.wrapper_right{
+		.wrapper_main{
 			/**float:right
 			width:734px;
 			margin:13px;**/
 		}
 
-		.wrapper_right .csc-firstHeader{
+		.wrapper_main .csc-firstHeader{
 			margin-top:10px;
 		}
 
-		.wrapper_right h1{
+		.wrapper_main h1{
 			font-size: 14px;
 			font-weight: bold;
 			color: #666666;
@@ -193,7 +193,7 @@ body, h1, h2, h3, h4, h5, h6, div, p, table, td, ul, ol, li, dd, dt, dl, blockqu
 			border-bottom-color: #666666;
 		}
 
-		.wrapper_right h2{
+		.wrapper_main h2{
 			font-size: 11px;
 			font-weight: bold;
 			color: #666666;
@@ -207,7 +207,7 @@ body, h1, h2, h3, h4, h5, h6, div, p, table, td, ul, ol, li, dd, dt, dl, blockqu
 			border-bottom-color: #666666; 
 		}
 
-		.wrapper_right h3{
+		.wrapper_main h3{
 			font-size: 10px;
 			font-weight: normal;
 			color: #666666;
@@ -298,7 +298,7 @@ body, h1, h2, h3, h4, h5, h6, div, p, table, td, ul, ol, li, dd, dt, dl, blockqu
 			}
 
 			
-			.wrapper_right .CONTENT_ELEMENT{
+			.wrapper_main .CONTENT_ELEMENT{
 				margin-bottom:15px;
 				clear:both;
 			}
@@ -308,24 +308,24 @@ body, h1, h2, h3, h4, h5, h6, div, p, table, td, ul, ol, li, dd, dt, dl, blockqu
 			}
 
 
-			.wrapper_right .CONTENT_ELEMENT .csc-textpic{
+			.wrapper_main .CONTENT_ELEMENT .csc-textpic{
 				margin-left:0px;
 				/*padding-top:10px;*/
 				padding-right:20px;
 			}
 
-			.wrapper_right .CONTENT_ELEMENT .csc-textpic-below .csc-textpic-imagewrap {
+			.wrapper_main .CONTENT_ELEMENT .csc-textpic-below .csc-textpic-imagewrap {
 				margin-top:10px;
 			}
 
 
 
-			.wrapper_right .CONTENT_ELEMENT ul{
+			.wrapper_main .CONTENT_ELEMENT ul{
 				list-style-type:square;
 				padding-left:20px;
 			}
 
-			.wrapper_right .CONTENT_ELEMENT ul.csc-menu{
+			.wrapper_main .CONTENT_ELEMENT ul.csc-menu{
 				list-style-type:none;
 				margin:0px 0px 10px 10px;
 				padding:0px;
@@ -860,6 +860,98 @@ body, h1, h2, h3, h4, h5, h6, div, p, table, td, ul, ol, li, dd, dt, dl, blockqu
 	margin-left: 10px;
 	margin-top: 25px;
 }
+
+/**************/
+/* LOGIN PAGE */
+/**************/
+
+.loginbox {
+	width: 375px;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #fefefe;
+	border: 1px solid #CCC;
+	color: #333;
+	box-shadow:0px 0px 8px #cccccc;
+	-moz-box-shadow:0px 0px 8px #cccccc;
+	-webkit-box-shadow:0px 0px 8px #cccccc;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding:10px;
+}
+
+#logintable {
+	width: 100%;
+	border: 0;
+	float: left;
+}
+
+#loginbutton {
+	width: 100px;
+	float: right;
+	margin: 0;
+}
+
+.inputboxes {
+	width: 100%;
+}
+
+.question {
+	font-weight: bold;
+	font-size: 14px;
+	padding-top: 7px;
+}
+
+.blueheader {
+	background: none repeat scroll 0 0 #00AEEC;
+    border: 0 none;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    margin: 0;
+    padding: 0 0 0 8px;
+    width: 98%;
+}
+
+.logininfo {
+	width: 100%;
+	margin-top: 60px;
+}
+
+.infoimg {
+	width: 10%;
+	float: left;
+}
+
+.infotext {
+	float: left;
+	width: 90%;
+}
+
+/**************/
+/**** FAQ *****/
+/**************/
+
+.faqbox {
+	width: 97%;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #fefefe;
+	border: 1px solid #CCC;
+	color: #333;
+	box-shadow:0px 0px 8px #cccccc;
+	-moz-box-shadow:0px 0px 8px #cccccc;
+	-webkit-box-shadow:0px 0px 8px #cccccc;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding:10px;
+}
+
+/**************/
+/** CLEARFIX **/
+/**************/
 
 .clearfix:after {
 	content: ".";
