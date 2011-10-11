@@ -10,6 +10,13 @@
 	<link type="text/css" href="fileadmin/site_css/jquery-ui-1.8.16.custom.css" rel="Stylesheet" />	
 	<script type="text/javascript" src="fileadmin/site_js/jquery-1.6.2.min.js"></script>
 	<script type="text/javascript" src="fileadmin/site_js/jquery-ui-1.8.16.custom.min.js"></script>
+	<script type="text/javascript" src="fileadmin/site_js/jquery.validate.js"></script>
+	<script type="text/javascript" src="fileadmin/site_js/validation_messages_no.js"></script>
+	<script>
+	  $(document).ready(function(){
+	    $("#newUserForm").validate();
+	  });
+	 </script>
 	<script type="text/javascript">
 		$(function() {
 			$( "#tabs" ).tabs();
@@ -39,87 +46,57 @@
 						<li><a href="#tabs-3">Spørsmål og svar</a></li>
 					</ul>
 					<div id="tabs-1">
-						<div class="loginbox clearfix">
-							<form action="index2.html" method="post">
+						<div class="createuserbox clearfix">
+							<form class="cmxform" id="newUserForm" action="index2.html" method="post">
 							  <div class="blueheader">Registrering av ny bruker</div>
-							  	<table id="logintable">
-							    <tr>
-							      <td width="20px">&nbsp;</td>
-							      <td width="150px">&nbsp;</td>
-							      <td>&nbsp;</td>
-							      <td width="20px">&nbsp;</td>
-							    </tr>
-							    <tr>
-							      <td colspan="4"><span class="question">Hva er e-postadressen din?</span><br/>&nbsp;</td>
-							    </tr>
-							    <tr>
-							      <td>&nbsp;</td>
-							      <td><b>E-postadressen min er:</b></td>
-							      <td><input name="password" type="password" class="inputboxes" id="password"/></td>
-							      <td>&nbsp;</td>
-							    </tr>
-							    <tr>
-							      <td>&nbsp;</td>
-							      <td>&nbsp;</td>
-							      <td>&nbsp;</td>
-							      <td>&nbsp;</td>
-							    </tr>
-							    <tr>
-							      <td>&nbsp;</td>
-							      <td>&nbsp;</td>
-							      <td>&nbsp;</td>
-							      <td>&nbsp;</td>
-							    </tr>
-							    <tr>
-							      <td colspan="4"><span class="question">Har du et EuroPark-passord fra før?</span><br/>&nbsp;</td>
-							    </tr>
-							    <tr>
-							      <td>&nbsp;</td>
-							      <td colspan="2"><input type="radio" name="neworoldcustomer" value="new" /><b>Nei, jeg er en ny bruker.</b></td>
-							      <td>&nbsp;</td>
-							    </tr>
-							    <tr>
-							      <td>&nbsp;</td>
-							      <td><input type="radio" name="neworoldcustomer" value="old" /><b>Ja, jeg har et passord:</b></td>
-							      <td><input name="password" type="password" class="inputboxes" id="password"/></td>
-							      <td>&nbsp;</td>
-							    </tr>
-							    <tr>
-							      <td>&nbsp;</td>
-							      <td>&nbsp;</td>
-							      <td><a href="#">Glemt passord?</a></td>
-							      <td>&nbsp;</td>
-							    </tr>
-							     <tr>
-							      <td>&nbsp;</td>
-							      <td>&nbsp;</td>
-							      <td>&nbsp;</td>
-							      <td>&nbsp;</td>
-							    </tr>
-							     <tr>
-							      <td>&nbsp;</td>
-							      <td>&nbsp;</td>
-							      <td>&nbsp;</td>
-							      <td>&nbsp;</td>
-							    </tr>
-							    <tr>
-							      <td>&nbsp;</td>
-							      <td>&nbsp;</td>
-							      <td><input type="submit" name="button" id="loginbutton" value="Logg inn"/></td>
-							      <td>&nbsp;</td>
-							    </tr>
+								<table id="logintable">
+								<tr>
+								  <td width="20%">&nbsp;</td>
+								  <td width="1%">&nbsp;</td>
+								  <td width="79%">&nbsp;</td>
+								</tr>
+								<tr>
+								  <td>Fornavn</td>
+								  <td>*</td>
+								  <td><input id="cfirstname" name="firstname" size="25" class="required" minlength="2" /></td>
+								</tr>
+								<tr>
+								  <td>Etternavn</td>
+								  <td>*</td>
+								  <td><input id="clastname" name="lastname" size="25" class="required" minlength="2" /></td>
+								</tr>
+								<tr>
+								  <td>E-postadresse</td>
+								  <td>*</td>
+								  <td><input id="email" name="email" size="25"  class="required email" /></td>
+								</tr>
+								<tr>
+								  <td>Passord</td>
+								  <td>*</td>
+								  <td><input name="pwd" size="25" type="password" id="pwd" class="required" minlength="5"></td></td>
+								</tr>
+								<tr>
+								<td>Bekreft passord</td>
+								  <td>*</td>
+								  <td><input name="pwdc" size="25" type="password" id="pwdc" class="required" equalTo="#pwd"/></td>
+								</tr>
+								<tr>
+								  <td>Mobilnr.</td>
+								  <td>*</td>
+								  <td><input id="cname" name="name" size="25" class="required" minlength="2" /></td>
+								</tr>
+								<tr>
+								  <td>&nbsp;</td>
+								  <td>&nbsp;</td>
+								  <td>&nbsp;</td>
+								</tr>
+								<tr>
+								  <td>&nbsp;</td>
+								  <td>&nbsp;</td>
+								  <td><input class="submit" type="submit" value="Registrer"/></td>
+								</tr>
 							  </table>
 							</form>
-							<br/>					
-							<div class="logininfo clearfix">
-								<div class="infoimg clearfix">
-									<img src="fileadmin/site_images/info.png" alt="Informasjon"/>
-								</div>
-								<div class="infotext clearfix">
-									Har du ikke benyttet EuroPark Online Booking tidligere må du registrere deg som ny bruker for å kunne bestille. <br/><br/>
-							  		Dersom du allerede er e-kvitteringskunde kan du bruke samme brukernavn og passord.
-							  	</div>
-							</div>
 						</div>
 					</div>
 					<div id="tabs-2">
