@@ -2,36 +2,73 @@
 /*************************************************/
 /*************************************************/
 
-.DATEOPT {
-	margin-buttom: 3px;
-	width: 95%;
-	height: 300px;
-	background-color: #F5F5F5;
-	border: 3px solid;
-	border-color: #D4D4D4; 
-    /**
-    -opera-border-radius: 7px;
-    -moz-border-radius: 7px;
-    -webkit-border-radius: 7px;
-    border-radius: 7px;
-    behavior: url(fileadmin/site_images/border-radius.htc); **/
+
+.LOC {
+	float: left;
+	margin-top: 4px;
 }
 
-.DATEOPTS ul { list-style-type: none; }
+.DATEOPT {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	width: 100%;
+	
+
+}
+
 
 .DATE_from {
 	float: left;
-	height: 250px;
 	width: 250px;
-	margin-right: 20px;
 
 }
 
 .DATE_to {
-	float: right;
-	height: 250px;
+	float: left;
 	width: 250px;
-	margin-right: 20px;
-
 }
+
+.TIME {
+	
+	float: right;
+	margin-top: 4px;
+	margin-right: 59px;
+}
+
+.TIMEBOX {
+	
+	float: left;
+	margin-top: 4px;
+}
+
+
+.TIME select {
+	
+	width: 40px;
+}
+
+.TIME p {
+	margin-left: 4px;
+	margin-right: 4px;
+	float: left;
+}
+
+.TIME .timetext {
+	margin-left: 4px;
+	margin-right: 7px;
+	float: left;
+}
+
+.TIME .timetext2 {
+	margin-left: 35px;
+	margin-right: 7px;
+	float: left;
+}
+
+.SEARCH {
+	margin-top: 20px;
+	float: right;
+}
+
+
 
