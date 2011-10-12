@@ -2,14 +2,15 @@
 <web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
-  
+    
   <servlet>
-    <servlet-name>personServlet</servlet-name>
-    <servlet-class>no.steria.kata.javaee.PersonServlet</servlet-class>
+    <servlet-name>ParkingServlet</servlet-name>
+    <servlet-class>no.europark.parkingBooking.ParkingServlet</servlet-class>
   </servlet>
+  
+<servlet-mapping>
+	<servlet-name>ParkingServlet</servlet-name>
+	<url-pattern>parking/*</url-pattern>
+</servlet-mapping>
 
-  <servlet-mapping>
-    <servlet-name>personServlet</servlet-name>
-    <url-pattern>person/*</url-pattern>
-  </servlet-mapping>
 </web-app>

@@ -1,0 +1,62 @@
+#include("./src/main/resources/parking/header.vm")
+<div id="tabs-1">
+	<div class="createuserbox clearfix">
+		<form class="cmxform" id="newUserForm" action="index2.html" method="post">
+		  <div class="blueheader">Registrering av ny bruker</div>
+			<table id="logintable">
+			<tr>
+			  <td width="20%">&nbsp;</td>
+			  <td width="1%">&nbsp;</td>
+			  <td width="79%">&nbsp;</td>
+			</tr>
+			<tr>
+			  <td>Fornavn</td>
+			  <td>*</td>
+			  <td><input id="cfirstname" name="firstname" size="25" class="required" minlength="2" /></td>
+			</tr>
+			<tr>
+			  <td>Etternavn</td>
+			  <td>*</td>
+			  <td><input id="clastname" name="lastname" size="25" class="required" minlength="2" /></td>
+			</tr>
+			<tr>
+			  <td>E-postadresse</td>
+			  <td>*</td>
+			  <td><input id="email" name="email" size="25"  class="required email" /></td>
+			</tr>
+			<tr>
+			  <td>Passord</td>
+			  <td>*</td>
+			  <td><input name="pwd" size="25" type="password" id="pwd" class="required" minlength="5"></td></td>
+			</tr>
+			<tr>
+			<td>Bekreft passord</td>
+			  <td>*</td>
+			  <td><input name="pwdc" size="25" type="password" id="pwdc" class="required" equalTo="#pwd"/></td>
+			</tr>
+			<tr>
+			  <td>Mobilnr.</td>
+			  <td>*</td>
+			  <td><input id="cname" name="name" size="25" class="required" minlength="2" /></td>
+			</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td><input class="submit" type="submit" value="Registrer"/></td>
+			</tr>
+		  </table>
+		</form>
+	</div>
+</div>
+<div id="tabs-2">
+	#include("./src/main/resources/parking/information.vm")
+</div>
+<div id="tabs-3">
+	#include("./src/main/resources/parking/faq.vm")
+</div>
+#include("./src/main/resources/parking/footer.vm")

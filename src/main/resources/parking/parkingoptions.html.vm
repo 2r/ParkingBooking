@@ -1,0 +1,144 @@
+#include("./src/main/resources/parking/header.vm")
+	
+
+<div id="tabs-1">
+	<div class="PARKINGOPTS clearfix">
+		<form action="parkingoptions.html" method="post">
+			<div class="sortoption">
+				<p>Sorter på:
+					<input type="radio" name="sorting" value="price" /> Pris
+					<input type="radio" name="sorting" value="distance" /> Distanse
+				</p>
+			</div>	
+			<ul>
+				<li>
+					<div class="PARKINGOPT clearfix">
+						<div class="PARKING_PLACE">
+							<div class="parking_img">
+								<img src="../fileadmin/site_images/parkingplaces/p1.gif"/>
+							</div>
+							<div class="parking_text">
+								<p>Business eller fritidsparkering for reisende som ønsker enkel, effektiv og bekvem parkering.</p>
+								<br/>
+								<a href="../fileadmin/parking_info/oslo_lufthavn_p2.pdf">Mer info og kart</a>
+							</div>
+						</div>
+						<div class="DISTANCE">
+							<div class=distance_img>
+								<img src="../fileadmin/site_images/transport/bus.png"/>
+							</div>
+							<div class=distance_text>
+								<p class="subheading">Skyttelbuss:</p>
+								<p>hvert 15. min</p>
+							</div>
+						</div>
+						<div class="PRICE">
+							<p class="subheading">Pris inkl. mva:</p>
+							<p class="pricetext">1432,-</p>
+						</div>
+						<div class="BUTTON">
+							<input type="image" src="../fileadmin/site_images/book-now.png" alt="Book Now"/>
+						</div>  
+					</div>						
+				</li>
+				<li>
+					<div class="PARKINGOPT clearfix">
+						<div class="PARKING_PLACE">
+							<div class="parking_img">
+								<img src="../fileadmin/site_images/parkingplaces/p2.gif"/>
+							</div>
+							<div class="parking_text">
+								<p>Business eller fritidsparkering for reisende som ønsker enkel, effektiv og bekvem parkering.</p>
+								<br/>
+								<a href="../fileadmin/parking_info/oslo_lufthavn_p2.pdf">Mer info og kart</a>
+							</div>
+						</div>
+						<div class="DISTANCE">
+							<div class=distance_img>
+								<img src="../fileadmin/site_images/transport/walk.png"/>
+							</div>
+							<div class=distance_text>
+								<p class="subheading">Gangavstand:</p>
+								<p>Vegg i vegg med terminalen, <br/>1-5 min å gå.</p>
+							</div>
+						</div>
+						<div class="PRICE">
+							<p class="subheading">Pris inkl. mva:</p>
+							<p class="pricetext">1432,-</p>
+						</div>
+						<div class="BUTTON">
+							<input type="image" src="../fileadmin/site_images/book-now.png" alt="Book Now"/>
+						</div> 
+					</div> 						
+				</li>
+				<li>
+					<div class="PARKINGOPT clearfix">
+						<div class="PARKING_PLACE">
+							<div class="parking_img">
+								<img src="../fileadmin/site_images/parkingplaces/p3.gif"/>
+							</div>
+							<div class="parking_text">
+								<p>Business eller fritidsparkering for reisende som ønsker enkel, effektiv og bekvem parkering.</p>
+								<br/>
+								<a href="../fileadmin/parking_info/oslo_lufthavn_p2.pdf">Mer info og kart</a>
+							</div>
+						</div>
+						<div class="DISTANCE">
+							<div class=distance_img>
+								<img src="../fileadmin/site_images/transport/bus.png"/>
+							</div>
+							<div class=distance_text>
+								<p class="subheading">Skyttelbuss:</p>
+								<p>hvert 15. min</p>
+							</div>
+						</div>
+						<div class="PRICE">
+							<p class="subheading">Pris inkl. mva:</p>
+							<p class="pricetext">560,-</p>
+						</div>
+						<div class="BUTTON">
+							<input type="image" src="../fileadmin/site_images/book-now.png" alt="Book Now"/>
+						</div>  
+					</div>						
+				</li>
+				<li>
+					<div class="PARKINGOPT clearfix">
+						<div class="PARKING_PLACE">
+							<div class="parking_img">
+								<img src="../fileadmin/site_images/parkingplaces/p4.gif"/>
+							</div>
+							<div class="parking_text">
+								<p>Business eller fritidsparkering for reisende som ønsker enkel, effektiv og bekvem parkering.</p>
+								<br/>
+								<a href="../fileadmin/parking_info/oslo_lufthavn_p2.pdf">Mer info og kart</a>
+							</div>
+						</div>
+						<div class="DISTANCE">
+							<div class=distance_img>
+								<img src="../fileadmin/site_images/transport/walk.png"/>
+							</div>
+							<div class=distance_text>
+								<p class="subheading">Gangavstand:</p>
+								<p>400m fra terminalen, <br/>1-5 min å gå.</p>
+							</div>
+						</div>
+						<div class="PRICE">
+							<p class="subheading">Pris inkl. mva:</p>
+							<p class="pricetext">984,-</p>
+						</div>
+						<div class="BUTTON">
+							<input type="image" src="../fileadmin/site_images/book-now.png" alt="Book Now" />
+						</div> 
+					</div> 						
+				</li>
+			</ul>
+		</form>
+	</div>
+</div>
+<div id="tabs-2">
+	#include("./src/main/resources/parking/information.vm")
+</div>
+<div id="tabs-3">
+	#include("./src/main/resources/parking/faq.vm")
+</div>
+#include("./src/main/resources/parking/footer.vm")

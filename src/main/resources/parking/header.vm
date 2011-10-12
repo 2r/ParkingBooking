@@ -1,0 +1,56 @@
+<!DOCTYPE html
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="no">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="../fileadmin/site_css/MENU_HEAD_3COL.css" media="all" />
+	<link href="../fileadmin/site_css/main.css" rel="stylesheet" type="text/css" />
+	<link href="../fileadmin/site_css/datepicker.css" rel="stylesheet" type="text/css" />
+	<link type="text/css" href="../fileadmin/site_css/jquery-ui-1.8.16.custom.css" rel="Stylesheet" />	
+	<script type="text/javascript" src="../fileadmin/site_js/jquery-1.6.2.min.js"></script>
+	<script type="text/javascript" src="../fileadmin/site_js/jquery-ui-1.8.16.custom.min.js"></script>
+	<script type="text/javascript" src="../fileadmin/site_js/jquery.validate.js"></script>
+	<script type="text/javascript" src="../fileadmin/site_js/validation_messages_no.js"></script>
+	<script>
+	  $(document).ready(function(){
+	    $("#newUserForm").validate();
+	  });
+	 </script>
+	<script type="text/javascript">
+		$(function() {
+			$( "#tabs" ).tabs();
+			
+			$('#datepicker').datepicker({
+				inline: true
+			});
+			$('#datepicker2').datepicker({
+				inline: true
+			});
+		});	
+	</script>
+	<title>EuroPark Norge - Online Booking</title>
+</head>
+
+<body>
+	<div class="wrapper_all">
+		<div id="wrapper_shadow_top"></div>
+		<div class="wrapper_all_2">
+		<div class="wrapper_all_3">
+		<div class="wrapper_all_4">
+			<div class="wrapper_head">
+				<div class="LOGO"><a href="index.html?id=1"><img src="../fileadmin/site_images/logo_no.gif" width="203" height="88" border="0" alt="" title="" /></a></div>
+				<div class="wrapper_head_meta">
+					<div class="MENU_LEFT"><ul class="LEV_1"><li><a href="no/right-top/kontakt-europark.html" onfocus="blurLink(this);">Kontakt EuroPark</a></li><li><a href="no/right-top/om-europark.html" onfocus="blurLink(this);">Om EuroPark</a></li><li><a href="no/right-top/nyheter.html" onfocus="blurLink(this);">Nyheter</a></li></ul></div>
+					<div class="clearing"></div>
+				</div>
+			</div>
+			<div class="wrapper_main">				
+				<div id="tabs">
+					<ul>
+						<li><a href="#tabs-1">Bestilling</a></li>
+						<li><a href="#tabs-2">Viktig informasjon</a></li>
+						<li><a href="#tabs-3">Spørsmål og svar</a></li>
+					</ul>
+					
