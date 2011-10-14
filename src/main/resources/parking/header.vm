@@ -13,12 +13,7 @@
 	<script type="text/javascript" src="../fileadmin/site_js/jquery-ui-1.8.16.custom.min.js"></script>
 	<script type="text/javascript" src="../fileadmin/site_js/jquery.validate.js"></script>
 	<script type="text/javascript" src="../fileadmin/site_js/validation_messages_no.js"></script>
-	<script>
-	  $(document).ready(function(){
-	    $("#newUserForm").validate();
-	  });
-	 </script>
-	<script type="text/javascript">
+		<script type="text/javascript">
 		$(function() {
 			$( "#tabs" ).tabs();
 			
@@ -27,6 +22,18 @@
 			});
 			$('#datepicker2').datepicker({
 				inline: true
+			});
+			$( "#datepicker3" ).datepicker({
+				showOn: "button",
+				buttonImage: "../fileadmin/site_css/images/calendar.gif",
+				buttonImageOnly: true
+				
+			});
+			$( "#datepicker4" ).datepicker({
+				showOn: "button",
+				buttonImage: "../fileadmin/site_css/images/calendar.gif",
+				buttonImageOnly: true
+				
 			});
 		});	
 	</script>

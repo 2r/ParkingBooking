@@ -12,63 +12,26 @@
 	margin-top: 10px;
 	margin-bottom: 20px;
 	width: 100%;
-	
-
 }
 
-
-.DATE_from {
+.DATE_container {
 	float: left;
 	width: 250px;
 
-}
-
-.DATE_to {
-	float: left;
-	width: 250px;
 }
 
 .TIME {
-	
 	float: right;
 	margin-top: 4px;
 	margin-right: 59px;
 }
 
-.TIMEBOX {
-	
-	float: left;
-	margin-top: 4px;
-}
-
-
 .TIME select {
-	
-	width: 40px;
+	width: 60px;
 }
 
-.TIME p {
-	margin-left: 4px;
-	margin-right: 4px;
-	float: left;
-}
-
-.TIME .timetext {
-	margin-left: 4px;
-	margin-right: 7px;
-	float: left;
-}
-
-.TIME .timetext2 {
-	margin-left: 35px;
-	margin-right: 7px;
-	float: left;
-}
-
-.SEARCH {
-	margin-top: 20px;
+.SEARCH_BUTTON {
+	margin-top: 10px;
+	margin-right: 60px;
 	float: right;
 }
-
-
-

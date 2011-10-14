@@ -768,8 +768,34 @@ body, h1, h2, h3, h4, h5, h6, div, p, table, td, ul, ol, li, dd, dt, dl, blockqu
 /*************************************************/
 /*************************************************/
 
-.sortoption {
+.SEARCHSUMMARY {
 	margin-top: 5px;
+	width: 100%;
+}
+.SELECTED_LOC  {
+	float: left;
+}
+.SELECTED_LOC select {
+	width: 170px;
+}
+
+.DATEBOX  {
+	float: left;
+	margin-left: 15px;
+}
+
+.DATEBOX input {
+	width: 80px;
+}
+
+.DATEBOX select {
+	width: 60px;
+}
+
+.sortoption {
+	float: left;
+	margin-top: 10px;
+	margin-bottom:8px;
 }
 
 .PARKINGOPT {
