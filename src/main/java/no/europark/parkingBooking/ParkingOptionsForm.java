@@ -23,6 +23,10 @@ public class ParkingOptionsForm extends VelocityForm{
         addModelVariable("parkingPlaces", parkingPlaces);
     }
 	
+	public void setSearchTerms(SearchTerms sterms) {
+        addModelVariable("searchTerms", sterms);
+    }
+	
 	@Override
 	protected List<String> getFieldNames() {
 		// TODO Auto-generated method stub

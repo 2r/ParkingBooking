@@ -46,9 +46,12 @@ public class ParkingServlet extends HttpServlet{
 	}
 	
 	private void showParkingOptions(HttpServletRequest req, PrintWriter writer) throws IOException {
+
+		SearchTerms sterms = new SearchTerms(req.getParameter("date1"), req.getParameter("Hours_from"), req.getParameter("date2"), req.getParameter("Hours_to"), req.getParameter("Location"));
 		ParkingOptionsForm form = new ParkingOptionsForm(req);
 		ParkingPlaceDao dao = new ParkingPlaceDaoImpl();
 		form.setParkingPlaces(dao.getParkingPlaces("gardermoen", null, null));
+		form.setSearchTerms(sterms);
 		form.show(writer);
 	}
 }

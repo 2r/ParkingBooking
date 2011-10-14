@@ -2,19 +2,18 @@
 <div id="tabs-1">
 		<div class="LOC clearfix">
 						<p class="subheading">Velg flyplass</p>
+						<form action="parkingoptions.html" method="post">
 							<select name="Location" >
 								<option value="">Vennligst velg</option>
 								<optgroup label="Norge"><option value="BGO">Bergen / Flesland (BGO)</option><option value="HAU">Haugesund Karmøy (HAU)</option><option value="OSL">Oslo Gardermoen (OSL)</option><option value="SVG">Stavanger Sola (SVG)</option><option value="TRD">Trondheim Værnes (TRD)</option>            </optgroup>
 							</select>
 						</div>
 						<div class="DATEOPT clearfix">
-							<form action="parkingoptions.html" method="post">
 								<div class="DATE_container">
 									<p class="subheading">Fra dato</p>
-									<div id="datepicker", name="date1 "></div>
+									<div id="datepicker", name="date1"></div>
 									<div class="TIME clearfix">
 										<br/> Klokken
-										
 										<select name="Hours_from">
 											<option value="00:01">00:01</option>
 											<option value="00:30">00:30</option>
