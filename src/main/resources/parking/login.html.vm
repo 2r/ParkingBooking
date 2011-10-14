@@ -1,7 +1,7 @@
 #include("./src/main/resources/parking/header.vm")
 <div id="tabs-1">
 	<div class="loginbox clearfix">
-		<form action="login.html" method="post">
+		<form action="createuser.html" method="post">
 		  <div class="blueheader">Vennligst logg inn</div>
 		  	<table id="logintable">
 		    <tr>

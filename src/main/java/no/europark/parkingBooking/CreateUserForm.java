@@ -24,5 +24,11 @@ public class CreateUserForm extends VelocityForm{
 	}
 	
 	
+	public User createUser() {
+		//User user = new User();
+		
+		return null;
+	}
+	
 
 }

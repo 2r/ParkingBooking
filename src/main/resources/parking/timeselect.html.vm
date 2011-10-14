@@ -8,7 +8,7 @@
 			</select>
 		</div>
 		<div class="DATEOPT clearfix">
-			<form action="timeselect.html" method="post">
+			<form action="parkingoptions.html" method="post">
 				<div class="DATE_from">
 					<p class="subheading">Fra dato</p>
 					<div id="datepicker", name="date1 "></div>

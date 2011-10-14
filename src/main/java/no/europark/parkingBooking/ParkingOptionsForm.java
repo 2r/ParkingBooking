@@ -7,6 +7,8 @@ import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 
+import no.steria.kata.javaee.Person;
+
 public class ParkingOptionsForm extends VelocityForm{
 
 	public ParkingOptionsForm(HttpServletRequest req) {
@@ -15,6 +17,10 @@ public class ParkingOptionsForm extends VelocityForm{
 	
 	void show(PrintWriter writer) throws IOException {
         renderVelocityTemplate(writer, "/parking/parkingoptions.html.vm");
+    }
+	
+	public void setParkingPlaces(List<ParkingPlace> parkingPlaces) {
+        addModelVariable("parkingPlaces", parkingPlaces);
     }
 	
 	@Override
