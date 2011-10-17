@@ -22,7 +22,10 @@ public class TimeSelectForm extends VelocityForm{
 		// TODO Auto-generated method stub
 		return Arrays.asList("name_query");
 	}
-	
-	
 
+	public void setFormVariables(List<String> hourDefaultList, List<String> locationDefaultList) {
+		 addModelVariable("hourDefaultList", hourDefaultList);
+	     addModelVariable("locationDefaultList", locationDefaultList);
+	}
+	
 }
