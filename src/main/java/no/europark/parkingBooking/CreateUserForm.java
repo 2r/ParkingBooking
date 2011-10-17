@@ -7,6 +7,8 @@ import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 
+import no.steria.kata.javaee.Person;
+
 public class CreateUserForm extends VelocityForm{
 
 	public CreateUserForm(HttpServletRequest req) {
@@ -22,13 +24,4 @@ public class CreateUserForm extends VelocityForm{
 		// TODO Auto-generated method stub
 		return Arrays.asList("name_query");
 	}
-	
-	
-	public User createUser() {
-		//User user = new User();
-		
-		return null;
-	}
-	
-
 }

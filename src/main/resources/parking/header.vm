@@ -13,7 +13,12 @@
 	<script type="text/javascript" src="../fileadmin/site_js/jquery-ui-1.8.16.custom.min.js"></script>
 	<script type="text/javascript" src="../fileadmin/site_js/jquery.validate.js"></script>
 	<script type="text/javascript" src="../fileadmin/site_js/validation_messages_no.js"></script>
-		<script type="text/javascript">
+	<script>
+		$(document).ready(function(){
+		$("#newUserForm").validate();
+	});
+	</script>
+	<script type="text/javascript">
 		$(function() {
 			$( "#tabs" ).tabs();
 			

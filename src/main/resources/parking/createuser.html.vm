@@ -1,7 +1,7 @@
 #include("./src/main/resources/parking/header.vm")
 <div id="tabs-1">
 	<div class="createuserbox clearfix">
-		<form class="cmxform" id="newUserForm" action="createuser.html" method="post">
+		<form class="cmxform" id="newUserForm" action="receipt.html" method="post">
 		  <div class="blueheader">Registrering av ny bruker</div>
 			<table id="logintable">
 			<tr>
@@ -12,12 +12,12 @@
 			<tr>
 			  <td>Fornavn</td>
 			  <td>*</td>
-			  <td><input id="cfirstname" name="firstname" size="25" class="required" minlength="2" /></td>
+			  <td><input id="firstname" name="firstname" size="25" class="required" minlength="2" /></td>
 			</tr>
 			<tr>
 			  <td>Etternavn</td>
 			  <td>*</td>
-			  <td><input id="clastname" name="lastname" size="25" class="required" minlength="2" /></td>
+			  <td><input id="lastname" name="lastname" size="25" class="required" minlength="2" /></td>
 			</tr>
 			<tr>
 			  <td>E-postadresse</td>
@@ -37,7 +37,7 @@
 			<tr>
 			  <td>Mobilnr.</td>
 			  <td>*</td>
-			  <td><input id="cname" name="name" size="25" class="required" minlength="2" /></td>
+			  <td><input id="mobilephone" name="mobilephone" size="25" class="required" minlength="2" /></td>
 			</tr>
 			<tr>
 			  <td>&nbsp;</td>

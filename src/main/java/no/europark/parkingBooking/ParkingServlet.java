@@ -1,6 +1,6 @@
 package no.europark.parkingBooking;
 
-import java.io.IOException;
+import java.io.IOException; 
 import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
@@ -36,17 +36,20 @@ public class ParkingServlet extends HttpServlet{
 		PrintWriter writer = resp.getWriter();
 		if (req.getPathInfo().equals("/parkingoptions.html")) {
 			showParkingOptions(req, writer);
-		} else if (req.getPathInfo().equals("/parkingoptions.html")) {
-			resp.sendRedirect("/parking/login.html");
 		} else if (req.getPathInfo().equals("/login.html")) {
-			resp.sendRedirect("/parking/createuser.html");
+			resp.sendRedirect("/parking/login.html");
 		} else if (req.getPathInfo().equals("/createuser.html")) {
 			resp.sendRedirect("/parking/createuser.html");
+		} else if (req.getPathInfo().equals("/receipt.html")) {
+			ReceiptForm rform = new ReceiptForm(req);
+			User user = rform.createUser();
+			rform.setUser(user);
+			System.out.println(user.getEmail() + " - " + user.getFirstName() + " - " + user.getLastName() + " - " + user.getPassword() + " - " + user.getMobilePhone());
+			rform.show(writer);
 		}
 	}
 	
 	private void showParkingOptions(HttpServletRequest req, PrintWriter writer) throws IOException {
-
 		SearchTerms sterms = new SearchTerms(req.getParameter("date1"), req.getParameter("Hours_from"), req.getParameter("date2"), req.getParameter("Hours_to"), req.getParameter("Location"));
 		ParkingOptionsForm form = new ParkingOptionsForm(req);
 		ParkingPlaceDao dao = new ParkingPlaceDaoImpl();
