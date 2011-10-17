@@ -23,6 +23,15 @@ public class ParkingOptionsForm extends VelocityForm{
         addModelVariable("parkingPlaces", parkingPlaces);
     }
 	
+	public void setFormVariables(String dateFrom, List<String> hourFromList, String dateTo, List<String> hourToList, List<String> locationList) {
+        addModelVariable("dateFrom", dateFrom);
+        addModelVariable("hourFromList", hourFromList);
+        addModelVariable("dateTo", dateTo);
+        addModelVariable("hourToList", hourToList);
+        addModelVariable("locationList", locationList);
+    }
+	
+	
 	public void setSearchTerms(SearchTerms sterms) {
         addModelVariable("searchTerms", sterms);
     }

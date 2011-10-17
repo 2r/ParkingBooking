@@ -23,7 +23,7 @@
 .TIME {
 	float: right;
 	margin-top: 4px;
-	margin-right: 59px;
+	margin-right: 85px;
 }
 
 .TIME select {
@@ -31,7 +31,7 @@
 }
 
 .SEARCH_BUTTON {
-	margin-top: 10px;
-	margin-right: 60px;
+	margin-top: 20px;
+	margin-right: 85px;
 	float: right;
 }

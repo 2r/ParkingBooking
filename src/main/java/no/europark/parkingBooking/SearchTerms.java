@@ -35,7 +35,11 @@ public class SearchTerms {
 	}
 	public String getLocation() {
 		return location;
+		
+
+		
 	}
+
 
 
 

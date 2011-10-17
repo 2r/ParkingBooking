@@ -23,10 +23,14 @@
 			$( "#tabs" ).tabs();
 			
 			$('#datepicker').datepicker({
-				inline: true
+				showOn: "button",
+				buttonImage: "../fileadmin/site_css/images/calendar.gif",
+				buttonImageOnly: true
 			});
 			$('#datepicker2').datepicker({
-				inline: true
+				showOn: "button",
+				buttonImage: "../fileadmin/site_css/images/calendar.gif",
+				buttonImageOnly: true
 			});
 			$( "#datepicker3" ).datepicker({
 				showOn: "button",
