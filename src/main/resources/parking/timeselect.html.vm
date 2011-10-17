@@ -3,7 +3,7 @@
 		<div class="LOC clearfix">
 						<p class="subheading">Velg flyplass</p>
 						<form action="parkingoptions.html" method="post">
-							<select name="Location" >
+							<select name="location" >
 								<option value="">Vennligst velg</option>
 								<optgroup label="Norge">
 								#foreach ( $String in $locationDefaultList )
@@ -14,10 +14,9 @@
 								<div class="DATE_container">
 									<p class="subheading">Fra dato</p>
 									<input type="text" id="datepicker" name="dateFrom"></p>
-
 									<div class="TIME clearfix">
 									Klokken
-										<select name="Hours_from">
+										<select name="hoursFrom">
 										#foreach ( $String in $hourDefaultList )
 											${String.toString()}
 										#end
@@ -29,7 +28,7 @@
 									<input type="text" id="datepicker2" name="dateTo"></p>
 									<div class="TIME clearfix">
 									 Klokken
-											<select name="Hours_to">
+											<select name="hoursTo">
 											#foreach ( $String in $hourDefaultList )
 												${String.toString()}
 											#end

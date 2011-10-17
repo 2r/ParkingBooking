@@ -27,7 +27,7 @@ public class ParkingServlet extends HttpServlet{
 		 resp.setContentType("text/html");
 		 PrintWriter writer = resp.getWriter();
 		 if (req.getPathInfo().equals("/timeselect.html")){
-			 setDefaultVariables(req, writer);
+			 setDefaultSearchVariables(req, writer);
 		 } else if (req.getPathInfo().equals("/parkingoptions.html")) {
 			 showParkingOptions(req, writer);
 		 } else if (req.getPathInfo().equals("/login.html")){
@@ -39,20 +39,14 @@ public class ParkingServlet extends HttpServlet{
 		 }
 	}
 
-	private void setDefaultVariables(HttpServletRequest req, PrintWriter writer) throws IOException {
-		TimeSelectForm tform = new TimeSelectForm(req);
-		
-		LocationDao locationdao = new LocationDaoImpl();
-		tform.setFormVariables(timeListHTMLGenerator("17:00"), locationListHTMLGenerator("NULL", locationdao.getLocations())
-				);
-		tform.show(writer);
-	}
 
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		resp.setContentType("text/html");
 		PrintWriter writer = resp.getWriter();
 		if (req.getPathInfo().equals("/parkingoptions.html")) {
+			showParkingOptions(req, writer);
+		} else if (req.getPathInfo().equals("/parkingupdate.html")) {
 			showParkingOptions(req, writer);
 		} else if (req.getPathInfo().equals("/login.html")) {
 			resp.sendRedirect("/parking/login.html");
@@ -68,55 +62,53 @@ public class ParkingServlet extends HttpServlet{
 	}
 	
 	private void showParkingOptions(HttpServletRequest req, PrintWriter writer) throws IOException {
-		SearchTerms sterms = new SearchTerms(req.getParameter("date1"), req.getParameter("Hours_from"), req.getParameter("date2"), req.getParameter("Hours_to"), req.getParameter("Location"));
+		SearchTerms sterms = new SearchTerms(req.getParameter("dateTo"), req.getParameter("hoursFrom"), req.getParameter("dateFrom"), req.getParameter("hoursTo"), req.getParameter("location"));
 		ParkingOptionsForm form = new ParkingOptionsForm(req);
 		ParkingPlaceDao dao = new ParkingPlaceDaoImpl();
 		LocationDao locationdao = new LocationDaoImpl();
 		form.setFormVariables(req.getParameter("dateFrom"),
-							timeListHTMLGenerator(req.getParameter("Hours_from")),
+							timeListHTMLGenerator(req.getParameter("hoursFrom")),
 							req.getParameter("dateTo"),
-							timeListHTMLGenerator(req.getParameter("Hours_to")),
-							locationListHTMLGenerator(req.getParameter("Location"), locationdao.getLocations())
-				);
-		form.setParkingPlaces(dao.getParkingPlaces("gardermoen", null, null));
+							timeListHTMLGenerator(req.getParameter("hoursTo")),
+							locationListHTMLGenerator(req.getParameter("location"), locationdao.getLocations()));
+		form.setParkingPlaces(dao.getParkingPlaces(sterms));
 		form.setSearchTerms(sterms);
 		form.show(writer);
 	}
 	
-	public static List<String> timeListHTMLGenerator(String selected_time) {
-		List<String> return_list = new ArrayList<String>();
-		String return_value, hour_count, min_count;
+	public static List<String> timeListHTMLGenerator(String selectedTime) {
+		List<String> returnList = new ArrayList<String>();
+		String returnValue, hourCount, minCount;
 		for (int i = 0; i < 24; i++) {
 			if (i < 10) {
-				hour_count = "0" + i;
+				hourCount = "0" + i;
 			}
 			else {
-				hour_count = i + "";
+				hourCount = i + "";
 			}
 			for (int j = 0; j <= 1; j++) {
 				if (j == 0) {
-					min_count = "00";
+					minCount = "00";
 				}
 				else {
-					min_count = "30";
+					minCount = "30";
 				}
-				return_value = hour_count +":"+ min_count;
+				returnValue = hourCount + ":" + minCount;
 				
-				if (return_value.equals(selected_time)) {
-					return_list.add("<option value=\"" + return_value + "\" selected=\"selected\">" + return_value + "</option>");
+				if (returnValue.equals(selectedTime)) {
+					returnList.add("<option value=\"" + returnValue + "\" selected=\"selected\">" + returnValue + "</option>");
 				}
 				else {
-					return_list.add("<option value=\"" + return_value + "\">" + return_value + "</option>");
+					returnList.add("<option value=\"" + returnValue + "\">" + returnValue + "</option>");
 				}
 			}
 			
 		}
-		return return_list;	
+		return returnList;	
 	}
 	
 	public static List<String> locationListHTMLGenerator(String selectedLocation, List<Location> locationList) {
 		List<String> returnList = new ArrayList<String>();
-
 		for (Location location : locationList) {
 			if (location.getLocationCode().equals(selectedLocation)) {
 				returnList.add("<option value=\"" + location.getLocationCode() + "\" selected=\"selected\">" + location.getLocationName() + "</option>"); 
@@ -125,7 +117,13 @@ public class ParkingServlet extends HttpServlet{
 				returnList.add("<option value=\"" + location.getLocationCode() + "\">"+ location.getLocationName() + "</option>"); 
 			}
 		}
-		
 		return returnList;
+	}
+	
+	private void setDefaultSearchVariables(HttpServletRequest req, PrintWriter writer) throws IOException {
+		TimeSelectForm tform = new TimeSelectForm(req);
+		LocationDao locationdao = new LocationDaoImpl();
+		tform.setFormVariables(timeListHTMLGenerator("17:00"), locationListHTMLGenerator("NULL", locationdao.getLocations()));
+		tform.show(writer);
 	}
 }

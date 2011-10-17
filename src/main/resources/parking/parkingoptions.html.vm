@@ -3,30 +3,30 @@
 
 <div id="tabs-1">
 	<div class="PARKINGOPTS clearfix">
-					<form action="login.html" method="post">
+					<form action="parkingupdate.html" method="post">
 						<div class="SEARCHSUMMARY clearfix">
 							<div class="SELECTED_LOC">
 							Flyplass:
-							<select name="Location" >
+							<select name="location" >
 								<optgroup label="Norge">
-								#foreach ( $String in $locationList )
-									${String.toString()}
+								#foreach ( $location in $locationList )
+									${location.toString()}
 								#end
 							</select>
 							</div>
 							<div class="DATEBOX">
-								Fra: <input type="text" id="datepicker3" value="$dateFrom" readonly>
-							<select name="Hours_from">
-							#foreach ( $String in $hourFromList )
-								${String.toString()}
+								Fra: <input type="text" name="dateFrom" id="dateFrom" value="$dateFrom" readonly>
+							<select name="hoursFrom">
+							#foreach ( $time in $hourFromList )
+								${time.toString()}
 							#end
 						</select>
 							</div>
 							<div class="DATEBOX">
-								Til: <input type="text" id="datepicker4" value="$dateTo" readonly>
-								<select name="Hours_to">
-								#foreach ( $String in $hourToList )
-									${String.toString()}
+								Til: <input type="text" name="dateTo" id="dateTo" value="$dateTo" readonly>
+								<select name="hoursTo">
+								#foreach ( $time in $hourToList )
+									${time.toString()}
 								#end
 								</select>
 							</div>
@@ -34,6 +34,8 @@
 								<input type="image" src="../fileadmin/site_images/update_search2.jpg" alt="Search Now"/>
 							</div>  
 						</div>
+					</form>
+					<form action="login.html" method="post">
 						<div class="sortoption">
 							<p>Sorter på:
 								<input type="radio" name="sorting" value="price" /> Pris

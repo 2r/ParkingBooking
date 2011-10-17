@@ -1,19 +1,20 @@
 package no.europark.parkingBooking.dao;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 import no.europark.parkingBooking.ParkingPlace;
 import no.europark.parkingBooking.ParkingPlace.transportType;
+import no.europark.parkingBooking.entity.SearchTerms;
 
 public class ParkingPlaceDaoImpl implements ParkingPlaceDao{
 
 	@Override
-	public List<ParkingPlace> getParkingPlaces(String airport, Date entryTime, Date exitTime) {
+	public List<ParkingPlace> getParkingPlaces(SearchTerms searchTerms) {
+		System.out.println("--------------------" + searchTerms.getLocation());
 		List<ParkingPlace> parkingList = null;
 		
-		if (airport == "flesland") {
+		if (searchTerms.getLocation().equals("BGO")) {
 			ParkingPlace p1 = new ParkingPlace(	"P1", 
 					"../fileadmin/site_images/parkingplaces/p1.gif", 
 					transportType.SHUTTLEBUS, 
@@ -48,7 +49,7 @@ public class ParkingPlaceDaoImpl implements ParkingPlaceDao{
 			parkingList.add(p2);
 			parkingList.add(p3);
 			parkingList.add(p4);
-		} else if (airport == "gardermoen") {
+		} else if (searchTerms.getLocation().equals("OSL")) {
 			ParkingPlace p1 = new ParkingPlace(	"P1", 
 					"../fileadmin/site_images/parkingplaces/p1.gif", 
 					transportType.SHUTTLEBUS, 
@@ -67,6 +68,16 @@ public class ParkingPlaceDaoImpl implements ParkingPlaceDao{
 			parkingList = new ArrayList<ParkingPlace>();
 			parkingList.add(p1);
 			parkingList.add(p2);
+		} else {
+			ParkingPlace p1 = new ParkingPlace(	"P1", 
+					"../fileadmin/site_images/parkingplaces/p1.gif", 
+					transportType.SHUTTLEBUS, 
+					"hvert 15. min", 
+					"Business eller fritidsparkering for reisende som ønsker enkel, effektiv og bekvem parkering.",
+					"../fileadmin/parking_info/oslo_lufthavn_p2.pdf",
+					1320);
+			parkingList = new ArrayList<ParkingPlace>();
+			parkingList.add(p1);
 		}
 		return parkingList;
 	}

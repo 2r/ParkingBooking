@@ -32,13 +32,13 @@
 				buttonImage: "../fileadmin/site_css/images/calendar.gif",
 				buttonImageOnly: true
 			});
-			$( "#datepicker3" ).datepicker({
+			$( "#dateTo" ).datepicker({
 				showOn: "button",
 				buttonImage: "../fileadmin/site_css/images/calendar.gif",
 				buttonImageOnly: true
 				
 			});
-			$( "#datepicker4" ).datepicker({
+			$( "#dateFrom" ).datepicker({
 				showOn: "button",
 				buttonImage: "../fileadmin/site_css/images/calendar.gif",
 				buttonImageOnly: true
