@@ -7,7 +7,7 @@ import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 
-import no.steria.kata.javaee.Person;
+
 
 public class CreateUserForm extends VelocityForm{
 

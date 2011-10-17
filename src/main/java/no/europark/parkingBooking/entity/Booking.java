@@ -1,6 +1,7 @@
-package no.europark.parkingBooking;
+package no.europark.parkingBooking.entity;
 
 import java.util.Date;
+
 
 public class Booking {
 	

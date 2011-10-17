@@ -7,6 +7,8 @@ import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 
+import no.europark.parkingBooking.entity.User;
+
 public class ReceiptForm extends VelocityForm{
 
 		public ReceiptForm(HttpServletRequest req) {

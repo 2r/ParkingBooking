@@ -7,7 +7,8 @@ import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 
-import no.steria.kata.javaee.Person;
+import no.europark.parkingBooking.entity.SearchTerms;
+
 
 public class ParkingOptionsForm extends VelocityForm{
 

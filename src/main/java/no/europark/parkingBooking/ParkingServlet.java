@@ -10,6 +10,14 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import no.europark.parkingBooking.dao.LocationDao;
+import no.europark.parkingBooking.dao.LocationDaoImpl;
+import no.europark.parkingBooking.dao.ParkingPlaceDao;
+import no.europark.parkingBooking.dao.ParkingPlaceDaoImpl;
+import no.europark.parkingBooking.entity.Location;
+import no.europark.parkingBooking.entity.SearchTerms;
+import no.europark.parkingBooking.entity.User;
+
 public class ParkingServlet extends HttpServlet{
 
 	private static final long serialVersionUID = 1125844790608528788L;

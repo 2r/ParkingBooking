@@ -1,9 +1,10 @@
-package no.europark.parkingBooking;
+package no.europark.parkingBooking.dao;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import no.europark.parkingBooking.ParkingPlace;
 import no.europark.parkingBooking.ParkingPlace.transportType;
 
 public class ParkingPlaceDaoImpl implements ParkingPlaceDao{

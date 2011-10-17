@@ -206,11 +206,7 @@
               <artifactId>c3p0</artifactId>
               <version>0.9.1</version>
             </artifactItem>
-            <artifactItem>
-              <groupId>org.slf4j</groupId>
-              <artifactId>slf4j-log4j12</artifactId>
-              <version>1.4.2</version>
-            </artifactItem>
+
           </artifactItems>
           <outputDirectory>${project.build.directory}/${project.build.finalName}</outputDirectory>
         </configuration>
@@ -241,7 +237,7 @@
         <configuration>
           <archive>
             <manifestEntries>
-              <Main-Class>no.steria.kata.javaee.main.WebServer</Main-Class>
+              <Main-Class>no.europark.parkingBooking.main.WebServer</Main-Class>
             </manifestEntries>
           </archive>
         </configuration>
