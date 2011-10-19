@@ -52,6 +52,9 @@ public class ParkingServlet extends HttpServlet{
 			resp.sendRedirect("/parking/login.html");
 		} else if (req.getPathInfo().equals("/createuser.html")) {
 			resp.sendRedirect("/parking/createuser.html");
+		} else if (req.getPathInfo().equals("/payment.html")) {
+			PaymentForm pform = new PaymentForm(req);
+			pform.show(writer);
 		} else if (req.getPathInfo().equals("/receipt.html")) {
 			ReceiptForm rform = new ReceiptForm(req);
 			User user = rform.createUser();
