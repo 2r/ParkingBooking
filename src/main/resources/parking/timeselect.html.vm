@@ -1,47 +1,49 @@
 #include("./src/main/resources/parking/header.vm")
 <div id="tabs-1">
-		<div class="LOC clearfix">
-						<p class="subheading">Velg flyplass</p>
-						<form action="parkingoptions.html" method="post">
-							<select name="location" >
-								<option value="">Vennligst velg</option>
-								<optgroup label="Norge">
-								#foreach ( $String in $locationDefaultList )
+<form class="cmxform" id="timeSelectForm" action="parkingoptions.html" method="post">
+	<div class="LOC clearfix">
+		<p class="subheading">Velg flyplass</p>
+				<select name="location" class="required">
+					<option value="">Vennligst velg</option>
+					<optgroup label="Norge">
+					#foreach ( $String in $locationDefaultList )
+						${String.toString()}
+					#end
+				</select>
+				</div>
+				<div class="DATEOPT clearfix">
+						<div class="DATE_container">
+							<p class="subheading">Fra dato</p>
+							<input type="text" id="datepicker" name="dateFrom" class="required date"></p>
+							<div class="TIME clearfix">
+							Klokken
+								<select name="hoursFrom">
+								#foreach ( $String in $hourDefaultList )
 									${String.toString()}
-								#end</select>
+								#end
+								</select>
+							</div>
 						</div>
-						<div class="DATEOPT clearfix">
-								<div class="DATE_container">
-									<p class="subheading">Fra dato</p>
-									<input type="text" id="datepicker" name="dateFrom"></p>
-									<div class="TIME clearfix">
-									Klokken
-										<select name="hoursFrom">
-										#foreach ( $String in $hourDefaultList )
-											${String.toString()}
-										#end
-										</select>
-									</div>
-								</div>
-								<div class="DATE_container">
-									<p class="subheading">Til dato</p>
-									<input type="text" id="datepicker2" name="dateTo"></p>
-									<div class="TIME clearfix">
-									 Klokken
-											<select name="hoursTo">
-											#foreach ( $String in $hourDefaultList )
-												${String.toString()}
-											#end
-											</select>
-									</div>
-									<br/>
-									<div class="SEARCH_BUTTON">
-										<input type="image" src="../fileadmin/site_images/search-now.png" alt="Search Now"/>
-									</div>  
-								</div>	
-							</form>	
-						</div>
-					</div>		
+						<div class="DATE_container">
+							<p class="subheading">Til dato</p>
+							<input type="text" id="datepicker2" name="dateTo" class="required date"></p>
+							<div class="TIME clearfix">
+								 Klokken
+								<select name="hoursTo">
+								#foreach ( $String in $hourDefaultList )
+									${String.toString()}
+								#end
+								</select>
+							</div>
+						<br/>
+						<div class="SEARCH_BUTTON">
+							<input type="image" src="../fileadmin/site_images/search-now.png" alt="Search Now"/>
+						</div> 
+				</div>
+		</form>
+		
+	</div>	
+</div>
 <div id="tabs-2">
 	#include("./src/main/resources/parking/information.vm")
 </div>

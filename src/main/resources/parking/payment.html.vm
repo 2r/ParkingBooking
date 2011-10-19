@@ -1,0 +1,174 @@
+#include("./src/main/resources/parking/header.vm")
+<div id="tabs-1">
+<form class="cmxform" id="timeSelectForm" action="parkingoptions.html" method="post">
+	<div class="SUMMARY clearfix">
+		<div class="BOOKING_SUMMARY clearfix">
+			<p class="subheading">Bestilling</p>
+			<table id="logintable">
+				<tr>
+				  <td width="50%">&nbsp;</td>
+				  <td width="50%">&nbsp;</td>
+				</tr>
+				<tr>
+				  <td>Sted:</td>
+				  <td>Bergen / Flesland (BGO)</td>
+				</tr>
+				<tr>
+				  <td>Valgt parkering:</td>
+				  <td>P1 - LONG-TERM</td>
+				</tr>
+				<tr>
+				  <td>Fra:</td>
+				  <td>11/10/2011 - 17:00</td>
+				</tr>
+				<tr>
+				  <td>Til:</td>
+				  <td>12/10/2011 - 17:00</td>
+				</tr>
+				<tr>
+				  <td><p>Total å betale:</td>
+				  <td><p class="pricetext2">1350,-</p></td>
+				</tr>
+			  </table>
+		</div>	
+		<div class="USER_SUMMARY clearfix">
+			<p class="subheading">Brukerinformasjon</p>
+			<table id="logintable">
+				<tr>
+			 	 	<td width="60%">&nbsp;</td>
+			 		<td width="40%">&nbsp;</td>
+				</tr>
+				<tr>
+				  <td>Navn:</td>
+				  <td>First Last</td>
+				</tr>
+				<tr>
+				  <td>E-postadresse:</td>
+				  <td>user@test.com</td>
+				</tr>
+				<tr>
+				  <td>Mobilnr:</td>
+				  <td>+47 xxxxxxxx</td>
+				</tr>
+			  </table>
+		</div>	
+	</div>	
+	<div class="PAYMENT clearfix">
+	<hr/>
+	<div class="PAYMENT_INFO clearfix">
+		<p class="subheading">Informasjon</p>
+		<p> Ved bruk av Online Booking blir kortet belastet 24 timer etter reservasjon. Dersom det viser seg at p-tiden blir lengre enn antatt, vil tilleggsbeløpet automatisk belastes kortet ved utkjøring.</p>
+		<p> Kredittkort som kan benyttes er Visa, MasterCard (EuroCard), Diners Club og American Express. Bruker er selv ansvarlig for at kredittkortet er gyldig for parkering.</p>
+		<p> Vi anbefaler å ta med reservasjonsbekreftelsen du mottar per e-post. Se vilkårene avbestilling og endring av reservert parkering.</p>
+	</div>
+	<div class="payment_img">
+		<img src="../fileadmin/site_images/cards2.gif"/>
+	</div>
+	<div class="LINE clearfix"><hr/></div>
+	<div class="CARD_INFO clearfix">
+		<p class="subheading">Betaling</p>
+			<table id="logintable">
+				<tr>
+			 	 	<td width="25%">&nbsp;</td>
+			 		<td width="35%">&nbsp;</td>
+			 		<td width="15%">&nbsp;</td>
+			 		<td width="10%">&nbsp;</td>
+			 		<td width="10%">&nbsp;</td>
+				</tr>
+				<tr>
+				 	<td>Betalingsmetode:</td>
+				 	<td><select name="paymentMethod">
+				 		<option value="">Vennligst velg</option>
+						<option value="AMX">American Express</option>
+						<option value="MCD">MasterCard</option>
+						<option value="VIS">Visa</option>
+						</select>
+					</td>
+ 					<td align="center">Gyldig fra: </td>
+				 	<td>
+				 	 	<select name="validFrom" style='width: 50px;'>
+					 		<option value=""></option>
+							<option value="Jan">Jan</option>
+							<option value="Feb">Feb</option>
+							<option value="Mar">Mar</option>
+							<option value="Apr">Apr</option>
+							<option value="Mai">Mai</option>
+							<option value="Jun">Jun</option>
+							<option value="Jul">Jul</option>
+							<option value="Aug">Aug</option>
+							<option value="Sep">Sep</option>
+							<option value="Okt">Okt</option>
+							<option value="Nov">Nov</option>
+							<option value="Des">Des</option>
+						</select>
+					</td>
+				 	<td>
+				 		<select name="validFromYear" style='width: 50px;'>
+					 		<option value=""></option>
+							<option value="2003">2003</option>
+							<option value="2004">2004</option>
+							<option value="2005">2005</option>
+							<option value="2006">2006</option>
+							<option value="2007">2007</option>
+							<option value="2008">2008</option>
+							<option value="2009">2009</option>
+							<option value="2010">2010</option>
+							<option value="2011">2011</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+				 	<td>Kortholderens navn:</td>
+				 	<td><input type="text" name="cardName" size="29" class="required"></p></td>
+				 	<td align="center">Gyldig til: </td>
+				 	<td>
+				 	 	<select name="validToMonth" style='width: 50px;'>
+					 		<option value=""></option>
+							<option value="Jan">Jan</option>
+							<option value="Feb">Feb</option>
+							<option value="Mar">Mar</option>
+							<option value="Apr">Apr</option>
+							<option value="Mai">Mai</option>
+							<option value="Jun">Jun</option>
+							<option value="Jul">Jul</option>
+							<option value="Aug">Aug</option>
+							<option value="Sep">Sep</option>
+							<option value="Okt">Okt</option>
+							<option value="Nov">Nov</option>
+							<option value="Des">Des</option>
+						</select>
+					</td>
+				 	<td>
+				 	 	<select name="validToYear" style='width: 50px;'>
+					 		<option value=""></option>
+							<option value="2011">2011</option>
+							<option value="2012">2012</option>
+							<option value="2013">2013</option>
+							<option value="2014">2014</option>
+							<option value="2015">2015</option>
+							<option value="2016">2016</option>
+							<option value="2017">2017</option>
+							<option value="2018">2018</option>
+							<option value="2019">2019</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+				 	<td>Kortnummer:</td>
+				  	<td><input type="text" name="cardNumber" size="29" class="required"></p></td>
+				  	<td align="center">CVC2:</td>
+				  	<td><input type="text" name="cvc2Code" size="5" class="required"></p></td>
+				  	<td><img src="../fileadmin/site_images/questionmark.gif"/></td>
+				</tr>
+			</table>
+		</div>
+	</form>
+	</div>
+</div>
+<div id="tabs-2">
+	#include("./src/main/resources/parking/information.vm")
+</div>
+<div id="tabs-3">
+	#include("./src/main/resources/parking/faq.vm")
+</div>
+#include("./src/main/resources/parking/footer.vm")

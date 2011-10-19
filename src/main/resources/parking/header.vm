@@ -18,6 +18,16 @@
 		$("#newUserForm").validate();
 	});
 	</script>
+	<script>
+		$(document).ready(function(){
+		$("#timeSelectForm").validate({
+		errorPlacement: function(error, element) {
+            error.appendTo( element.parent("td").next("td") );
+        }
+		}
+		);
+	});
+	</script>
 	<script type="text/javascript">
 		$(function() {
 			$( "#tabs" ).tabs();

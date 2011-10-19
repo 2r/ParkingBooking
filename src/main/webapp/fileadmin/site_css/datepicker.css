@@ -8,6 +8,7 @@
 	margin-top: 4px;
 }
 
+
 .DATEOPT {
 	margin-top: 10px;
 	margin-bottom: 20px;
@@ -34,4 +35,48 @@
 	margin-top: 20px;
 	margin-right: 85px;
 	float: right;
+}
+
+.SUMMARY {
+	margin-top: 10px;
+	width: 80%;
+}
+.BOOKING_SUMMARY {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	float: left;
+}
+.USER_SUMMARY {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	float: right;
+}
+.PAYMENT {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	width: 100%;
+}
+.CARD_INFO {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	width: 60%;
+	float: left;
+}
+.PAYMENT_INFO {
+	margin-top: 10px;
+	width: 70%;
+	float: left;
+}
+.pricetext2 {
+	color: #9A75FF;
+	font-size: 20px;
+	text-align: left;
+}
+.payment_image {
+	float: right;
+	margin-top: 80px;
+}
+.LINE {
+	margin-top: 30px;
+	width: 100%;
 }
