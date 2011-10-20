@@ -40,11 +40,11 @@
 				</tr>
 				<tr>
 				  <td>Fra:</td>
-				  <td>$TimeSpan.dateFrom - $TimeSpan.hoursFrom</td>
+				  <td>$DateFrom - $HoursFrom</td>
 				</tr>
 				<tr>
 				  <td>Til:</td>
-				  <td>$TimeSpan.dateTo - $TimeSpan.hoursTo</td>
+				  <td>$DateTo - $HoursTo</td>
 				</tr>
 				<tr>
 				  <td><p>Total å betale:</td>

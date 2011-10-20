@@ -30,9 +30,21 @@ public class PaymentForm extends VelocityForm{
         addModelVariable("Location", location);
     }
 	
-	public void setTimeSpan(TimeSpan timeSpan) {
-        addModelVariable("TimeSpan", timeSpan);
-    }
+	public void setDateTo(String dateTo){
+		addModelVariable("DateTo", dateTo);
+	}
+	
+	public void setDateFrom(String dateFrom){
+		addModelVariable("DateFrom", dateFrom);
+	}
+	
+	public void setHoursTo(String hoursTo){
+		addModelVariable("HoursTo", hoursTo);
+	}
+	
+	public void setHoursFrom(String hoursFrom){
+		addModelVariable("HoursFrom", hoursFrom);
+	}
 	
 	public void setParkingPlace(ParkingPlace parkingPlace) {
         addModelVariable("ParkingPlace", parkingPlace);
@@ -40,7 +52,6 @@ public class PaymentForm extends VelocityForm{
 	
 	public void setTotalPrice(TimeSpan timeSpan, ParkingPlace parkingPlace) {
 		int totalPrice = Utility.CalculatePrice(timeSpan, parkingPlace);
-		System.out.println("TOT.PRICE: " + totalPrice);
 		addModelVariable("TotalPrice", totalPrice);
 	}
 	

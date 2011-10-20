@@ -59,7 +59,14 @@ public class ParkingServlet extends HttpServlet{
 			pform.setUser(booking.getUser());
 			pform.setLocation(booking.getLocation());
 			pform.setParkingPlace(booking.getParkingPlace());
-			pform.setTimeSpan(booking.getTimeSpan());
+			try {
+				pform.setDateFrom(Utility.dateToString(booking.getTimeSpan().getDateFrom()));
+				pform.setDateTo(Utility.dateToString(booking.getTimeSpan().getDateTo()));
+				pform.setHoursFrom(booking.getTimeSpan().getHoursFrom());
+				pform.setHoursTo(booking.getTimeSpan().getHoursTo());
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 			pform.setTotalPrice(booking.getTimeSpan(), booking.getParkingPlace());
 			pform.show(writer);
 		} else if (req.getPathInfo().equals("/receipt.html")) {

@@ -16,6 +16,12 @@ public class Utility {
 		return date;
 	}
 	
+	public static String dateToString(Date date) throws Exception {
+		SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy");
+		return formatter.format(date);
+	}
+	
+	
 	public static int CalculatePrice(TimeSpan timeSpan, ParkingPlace parkingPlace) {
 		int days = daysBetween(timeSpan.getDateFrom(), timeSpan.getDateTo());
 		int totalPrice = days * parkingPlace.getPricePerDay();
