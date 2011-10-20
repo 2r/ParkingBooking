@@ -788,6 +788,10 @@ body, h1, h2, h3, h4, h5, h6, div, p, table, td, ul, ol, li, dd, dt, dl, blockqu
 	width: 80px;
 }
 
+#searchpic {
+	width: 25px;
+}
+
 .DATEBOX select {
 	width: 60px;
 }

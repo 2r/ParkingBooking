@@ -6,4 +6,5 @@ import no.europark.parkingBooking.entity.Location;
 
 public interface LocationDao {
 	List<Location> getLocations();
+	Location getLocation(String locationCode);
 }
