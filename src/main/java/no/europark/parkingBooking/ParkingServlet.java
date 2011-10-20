@@ -17,6 +17,7 @@ import no.europark.parkingBooking.dao.ParkingPlaceDao;
 import no.europark.parkingBooking.dao.ParkingPlaceDaoMock;
 import no.europark.parkingBooking.entity.Booking;
 import no.europark.parkingBooking.entity.Location;
+import no.europark.parkingBooking.entity.ParkingPlace;
 import no.europark.parkingBooking.entity.TimeSpan;
 import no.europark.parkingBooking.entity.User;
 

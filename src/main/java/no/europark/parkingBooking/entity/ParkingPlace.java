@@ -1,4 +1,4 @@
-package no.europark.parkingBooking;
+package no.europark.parkingBooking.entity;
 
 public class ParkingPlace {
 	

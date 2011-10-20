@@ -2,7 +2,7 @@ package no.europark.parkingBooking.dao;
 
 import java.util.List;
 
-import no.europark.parkingBooking.ParkingPlace;
+import no.europark.parkingBooking.entity.ParkingPlace;
 import no.europark.parkingBooking.entity.TimeSpan;
 
 public interface ParkingPlaceDao {

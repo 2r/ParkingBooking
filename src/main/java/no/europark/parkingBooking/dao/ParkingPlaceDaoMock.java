@@ -3,9 +3,9 @@ package no.europark.parkingBooking.dao;
 import java.util.ArrayList;
 import java.util.List;
 
-import no.europark.parkingBooking.ParkingPlace;
-import no.europark.parkingBooking.ParkingPlace.transportType;
+import no.europark.parkingBooking.entity.ParkingPlace;
 import no.europark.parkingBooking.entity.TimeSpan;
+import no.europark.parkingBooking.entity.ParkingPlace.transportType;
 
 public class ParkingPlaceDaoMock implements ParkingPlaceDao{
 

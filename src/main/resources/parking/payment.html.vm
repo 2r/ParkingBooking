@@ -1,6 +1,6 @@
 #include("./src/main/resources/parking/header.vm")
 <div id="tabs-1">
-<form class="cmxform" id="timeSelectForm" action="parkingoptions.html" method="post">
+<form class="cmxform" id="timeSelectForm" action="receipt.html" method="post">
 	<div class="SUMMARY clearfix">
 		<div class="BOOKING_SUMMARY clearfix">
 			<p class="subheading">Brukerinformasjon</p>

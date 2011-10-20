@@ -2,7 +2,6 @@ package no.europark.parkingBooking.entity;
 
 import java.util.UUID;
 
-import no.europark.parkingBooking.ParkingPlace;
 
 public class Booking {
 	
