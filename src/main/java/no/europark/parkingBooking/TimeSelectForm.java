@@ -19,7 +19,6 @@ public class TimeSelectForm extends VelocityForm{
 	
 	@Override
 	protected List<String> getFieldNames() {
-		// TODO Auto-generated method stub
 		return Arrays.asList("name_query");
 	}
 

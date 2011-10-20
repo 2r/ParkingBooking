@@ -23,10 +23,10 @@ public class ReceiptForm extends VelocityForm{
 	        addModelVariable("User", user);
 	    }
 		
-		public User createUser() {
-			User user = new User(getParameter("email"), getParameter("firstname"), getParameter("lastname"), getParameter("pwd"), getParameter("mobilephone"));
-			return user;
-		}
+//		public User createUser() {
+//			User user = new User(getParameter("email"), getParameter("firstname"), getParameter("lastname"), getParameter("pwd"), getParameter("mobilephone"));
+//			return user;
+//		}
 		
 		@Override
 		protected List<String> getFieldNames() {

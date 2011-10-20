@@ -3,7 +3,7 @@
 
 <div id="tabs-1">
 	<div class="PARKINGOPTS clearfix">
-					<form action="parkingupdate.html" method="post">
+					<form action="parkingoptions.html" method="post">
 						<div class="SEARCHSUMMARY clearfix">
 							<div class="SELECTED_LOC">
 							Flyplass:
@@ -31,11 +31,11 @@
 								</select>
 							</div>
 							<div class="DATEBOX">
-								<input type="image" src="../fileadmin/site_images/update_search2.jpg" alt="Search Now"/>
+								<input id="searchpic" type="image" src="../fileadmin/site_images/update_search.png" alt="Search Now"/>
 							</div>  
 						</div>
 					</form>
-					<form action="login.html" method="post">
+					
 						<div class="sortoption">
 							<p>Sorter på:
 								<input type="radio" name="sorting" value="price" /> Pris
@@ -45,6 +45,7 @@
 						<ul>
 				#foreach ( $parkingPlace in $parkingPlaces )
     				<li>
+    				<form action="login.html" method="post">
 					<div class="PARKINGOPT clearfix">
 						<div class="PARKING_PLACE">
 							<div class="parking_img">
@@ -78,13 +79,15 @@
 							<p class="pricetext">${parkingPlace.pricePerDay},-</p>
 						</div>
 						<div class="BUTTON">
+							<input type="hidden" name="parkingPlace" value="${parkingPlace.name}">
 							<input type="image" src="../fileadmin/site_images/book-now.png" alt="Book Now"/>
 						</div>  
-					</div>						
+					</div>
+					</form>						
 				</li>
   				#end
 			</ul>
-		</form>
+		
 	</div>
 </div>
 <div id="tabs-2">

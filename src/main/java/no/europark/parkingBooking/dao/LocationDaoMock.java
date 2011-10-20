@@ -5,7 +5,7 @@ import java.util.List;
 
 import no.europark.parkingBooking.entity.Location;
 
-public class LocationDaoImpl implements LocationDao {
+public class LocationDaoMock implements LocationDao {
 
 	@Override
 	public List<Location> getLocations() {
@@ -24,6 +24,17 @@ public class LocationDaoImpl implements LocationDao {
 		
 		return locationList;
 	}
-	
 
+	@Override
+	public Location getLocation(String locationCode) {
+		List<Location> locationList = getLocations();
+		Location location = null;
+		for (Location l : locationList) {
+			if (l.getLocationCode().equals(locationCode)) {
+				
+				location = l;
+			}
+		}
+		return location;
+	}
 }
