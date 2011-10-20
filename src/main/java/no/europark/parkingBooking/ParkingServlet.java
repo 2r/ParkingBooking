@@ -50,6 +50,11 @@ public class ParkingServlet extends HttpServlet{
 		} else if (req.getPathInfo().equals("/payment.html")) {
 			addUserToBooking(req);
 			PaymentForm pform = new PaymentForm(req);
+			Booking booking = getBooking(req);
+			pform.setUser(booking.getUser());
+			pform.setLocation(booking.getLocation());
+			pform.setParkingPlace(booking.getParkingPlace());
+			pform.setTimeSpan(booking.getTimeSpan());
 			pform.show(writer);
 		} else if (req.getPathInfo().equals("/receipt.html")) {
 			addUserToBooking(req);
@@ -108,6 +113,7 @@ public class ParkingServlet extends HttpServlet{
 		String dateTo = req.getParameter("dateTo");
 		String hoursFrom = req.getParameter("hoursFrom");
 		String hoursTo = req.getParameter("hoursTo");
+		System.out.println("TRALAlA: " + hoursFrom + "---" + hoursTo);
 		TimeSpan timeSpan = new TimeSpan(dateFrom, dateTo, hoursFrom, hoursTo);
 		addTimeSpanToBooking(req, timeSpan);
 		
@@ -115,7 +121,7 @@ public class ParkingServlet extends HttpServlet{
 		LocationDao locationDao = new LocationDaoMock();
 		Location loc = locationDao.getLocation(locationCode);
 		addLocationToBooking(req, loc);
-
+		
 		ParkingPlaceDao parkingPlaceDao = new ParkingPlaceDaoMock();
 
 		ParkingOptionsForm form = new ParkingOptionsForm(req);

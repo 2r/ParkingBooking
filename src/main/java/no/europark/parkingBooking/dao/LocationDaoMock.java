@@ -10,7 +10,7 @@ public class LocationDaoMock implements LocationDao {
 	@Override
 	public List<Location> getLocations() {
 		List<Location> locationList = new ArrayList<Location>();
-		Location BGO = new Location("BGO", "Bergen / Flesland (BGO");
+		Location BGO = new Location("BGO", "Bergen / Flesland (BGO)");
 		Location HAU = new Location("HAU", "Haugesund Karmøy (HAU)");
 		Location OSL = new Location("OSL", "Oslo Gardermoen (OSL)");
 		Location SVG = new Location("SVG", "Stavanger Sola (SVG)");

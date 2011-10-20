@@ -30,19 +30,19 @@ public class TimeSpan {
 		this.dateTo = dateTo;
 	}
 
-	public String getHourFrom() {
+	public String getHoursFrom() {
 		return hoursFrom;
 	}
 
-	public void setHourFrom(String hourFrom) {
+	public void setHoursFrom(String hourFrom) {
 		this.hoursFrom = hourFrom;
 	}
 
-	public String getHourTo() {
+	public String getHoursTo() {
 		return hoursTo;
 	}
 
-	public void setHourTo(String hourTo) {
+	public void setHoursTo(String hourTo) {
 		this.hoursTo = hourTo;
 	}	
 }

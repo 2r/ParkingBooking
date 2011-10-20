@@ -11,15 +11,15 @@
 				</tr>
 				<tr>
 				  <td>Navn:</td>
-				  <td>First Last</td>
+				  <td>$User.firstName $User.lastName</td>
 				</tr>
 				<tr>
 				  <td>E-postadresse:</td>
-				  <td>user@test.com</td>
+				  <td>$User.email</td>
 				</tr>
 				<tr>
 				  <td>Mobilnr:</td>
-				  <td>+47 xxxxxxxx</td>
+				  <td>$User.mobilePhone</td>
 				</tr>
 			</table>
 			<br/>
@@ -32,19 +32,19 @@
 				</tr>
 				<tr>
 				  <td>Sted:</td>
-				  <td>Bergen / Flesland (BGO)</td>
+				  <td>$Location.locationName ($Location.locationCode)</td>
 				</tr>
 				<tr>
 				  <td>Valgt parkering:</td>
-				  <td>P1 - LONG-TERM</td>
+				  <td>$ParkingPlace.name</td>
 				</tr>
 				<tr>
 				  <td>Fra:</td>
-				  <td>11/10/2011 - 17:00</td>
+				  <td>$TimeSpan.dateFrom - $TimeSpan.hoursFrom</td>
 				</tr>
 				<tr>
 				  <td>Til:</td>
-				  <td>12/10/2011 - 17:00</td>
+				  <td>$TimeSpan.dateTo - $TimeSpan.hoursTo</td>
 				</tr>
 				<tr>
 				  <td><p>Total å betale:</td>

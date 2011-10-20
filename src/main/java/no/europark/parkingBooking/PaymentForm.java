@@ -7,6 +7,11 @@ import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 
+import no.europark.parkingBooking.entity.Location;
+import no.europark.parkingBooking.entity.ParkingPlace;
+import no.europark.parkingBooking.entity.TimeSpan;
+import no.europark.parkingBooking.entity.User;
+
 public class PaymentForm extends VelocityForm{
 
 	public PaymentForm(HttpServletRequest req) {
@@ -15,6 +20,22 @@ public class PaymentForm extends VelocityForm{
 	
 	void show(PrintWriter writer) throws IOException {
         renderVelocityTemplate(writer, "/parking/payment.html.vm");
+    }
+	
+	public void setUser(User user) {
+        addModelVariable("User", user);
+    }
+	
+	public void setLocation(Location location) {
+        addModelVariable("Location", location);
+    }
+	
+	public void setTimeSpan(TimeSpan timeSpan) {
+        addModelVariable("TimeSpan", timeSpan);
+    }
+	
+	public void setParkingPlace(ParkingPlace parkingPlace) {
+        addModelVariable("ParkingPlace", parkingPlace);
     }
 	
 	@Override
