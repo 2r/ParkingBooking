@@ -3,8 +3,29 @@
 <form class="cmxform" id="timeSelectForm" action="parkingoptions.html" method="post">
 	<div class="SUMMARY clearfix">
 		<div class="BOOKING_SUMMARY clearfix">
-			<p class="subheading">Bestilling</p>
-			<table id="logintable">
+			<p class="subheading">Brukerinformasjon</p>
+			<table id="usertable">
+				<tr>
+			 	 	<td width="60%">&nbsp;</td>
+			 		<td width="40%">&nbsp;</td>
+				</tr>
+				<tr>
+				  <td>Navn:</td>
+				  <td>First Last</td>
+				</tr>
+				<tr>
+				  <td>E-postadresse:</td>
+				  <td>user@test.com</td>
+				</tr>
+				<tr>
+				  <td>Mobilnr:</td>
+				  <td>+47 xxxxxxxx</td>
+				</tr>
+			</table>
+			<br/>
+			<table id="ordertable">
+					<p class="subheading">Bestilling</p>
+				</tr>
 				<tr>
 				  <td width="50%">&nbsp;</td>
 				  <td width="50%">&nbsp;</td>
@@ -27,53 +48,28 @@
 				</tr>
 				<tr>
 				  <td><p>Total å betale:</td>
-				  <td><p class="pricetext2">1350,-</p></td>
+				  <td><p class="PRICETEXT2">1350,-</p></td>
 				</tr>
 			  </table>
 		</div>	
-		<div class="USER_SUMMARY clearfix">
-			<p class="subheading">Brukerinformasjon</p>
-			<table id="logintable">
-				<tr>
-			 	 	<td width="60%">&nbsp;</td>
-			 		<td width="40%">&nbsp;</td>
-				</tr>
-				<tr>
-				  <td>Navn:</td>
-				  <td>First Last</td>
-				</tr>
-				<tr>
-				  <td>E-postadresse:</td>
-				  <td>user@test.com</td>
-				</tr>
-				<tr>
-				  <td>Mobilnr:</td>
-				  <td>+47 xxxxxxxx</td>
-				</tr>
-			  </table>
+		<div class="INFORMATION clearfix">
+			<p class="subheading">Informasjon</p>
+			<p> Ved bruk av Online Booking blir kortet belastet 24 timer etter reservasjon. Dersom det viser seg at p-tiden blir lengre enn antatt, vil tilleggsbeløpet automatisk belastes kortet ved utkjøring.</p>
+			<p> Kredittkort som kan benyttes er Visa, MasterCard (EuroCard), Diners Club og American Express. Bruker er selv ansvarlig for at kredittkortet er gyldig for parkering.</p>
+			<div class="PAYMENT_IMAGE">
+				<img src="../fileadmin/site_images/acceptedcards_hor.png"/>
+			</div>
+			<p> Vi anbefaler å ta med reservasjonsbekreftelsen du mottar per e-post. Se vilkårene for avbestilling og endring av reservert parkering.</p>	
 		</div>	
 	</div>	
 	<div class="PAYMENT clearfix">
-	<hr/>
-	<div class="PAYMENT_INFO clearfix">
-		<p class="subheading">Informasjon</p>
-		<p> Ved bruk av Online Booking blir kortet belastet 24 timer etter reservasjon. Dersom det viser seg at p-tiden blir lengre enn antatt, vil tilleggsbeløpet automatisk belastes kortet ved utkjøring.</p>
-		<p> Kredittkort som kan benyttes er Visa, MasterCard (EuroCard), Diners Club og American Express. Bruker er selv ansvarlig for at kredittkortet er gyldig for parkering.</p>
-		<p> Vi anbefaler å ta med reservasjonsbekreftelsen du mottar per e-post. Se vilkårene avbestilling og endring av reservert parkering.</p>
-	</div>
-	<div class="payment_img">
-		<img src="../fileadmin/site_images/cards2.gif"/>
-	</div>
-	<div class="LINE clearfix"><hr/></div>
-	<div class="CARD_INFO clearfix">
+		<hr/>
+		<div class="CARD_INFO clearfix">
 		<p class="subheading">Betaling</p>
-			<table id="logintable">
+			<table id="creditcardtable">
 				<tr>
-			 	 	<td width="25%">&nbsp;</td>
-			 		<td width="35%">&nbsp;</td>
-			 		<td width="15%">&nbsp;</td>
-			 		<td width="10%">&nbsp;</td>
-			 		<td width="10%">&nbsp;</td>
+			 	 	<td width="40%">&nbsp;</td>
+			 		<td width="60%">&nbsp;</td>
 				</tr>
 				<tr>
 				 	<td>Betalingsmetode:</td>
@@ -84,45 +80,30 @@
 						<option value="VIS">Visa</option>
 						</select>
 					</td>
- 					<td align="center">Gyldig fra: </td>
-				 	<td>
-				 	 	<select name="validFrom" style='width: 50px;'>
-					 		<option value=""></option>
-							<option value="Jan">Jan</option>
-							<option value="Feb">Feb</option>
-							<option value="Mar">Mar</option>
-							<option value="Apr">Apr</option>
-							<option value="Mai">Mai</option>
-							<option value="Jun">Jun</option>
-							<option value="Jul">Jul</option>
-							<option value="Aug">Aug</option>
-							<option value="Sep">Sep</option>
-							<option value="Okt">Okt</option>
-							<option value="Nov">Nov</option>
-							<option value="Des">Des</option>
-						</select>
-					</td>
-				 	<td>
-				 		<select name="validFromYear" style='width: 50px;'>
-					 		<option value=""></option>
-							<option value="2003">2003</option>
-							<option value="2004">2004</option>
-							<option value="2005">2005</option>
-							<option value="2006">2006</option>
-							<option value="2007">2007</option>
-							<option value="2008">2008</option>
-							<option value="2009">2009</option>
-							<option value="2010">2010</option>
-							<option value="2011">2011</option>
-						</select>
-					</td>
 				</tr>
 				<tr>
 				 	<td>Kortholderens navn:</td>
-				 	<td><input type="text" name="cardName" size="29" class="required"></p></td>
-				 	<td align="center">Gyldig til: </td>
-				 	<td>
-				 	 	<select name="validToMonth" style='width: 50px;'>
+				 	<td><input type="text" name="cardName" size="29" class="required"></td>
+				</tr>
+				<tr>
+					<td>Kortnummer: </td>
+					<td>
+						<input type="text" name="cardName" size="29" class="required">
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="CVC_INFO">
+		<table id="cvctable">
+		<p class="subheading">&nbsp;</p>
+			<tr>
+			 	 	<td width="40%">&nbsp;</td>
+			 		<td width="60%">&nbsp;</td>
+			</tr>
+			<tr>
+				 <td>Utløpsdato:</td>
+				 <td>				 	 	
+				 	<select name="validToMonth" style='width: 50px;'>
 					 		<option value=""></option>
 							<option value="Jan">Jan</option>
 							<option value="Feb">Feb</option>
@@ -137,9 +118,7 @@
 							<option value="Nov">Nov</option>
 							<option value="Des">Des</option>
 						</select>
-					</td>
-				 	<td>
-				 	 	<select name="validToYear" style='width: 50px;'>
+						<select name="validToYear" style='width: 50px;'>
 					 		<option value=""></option>
 							<option value="2011">2011</option>
 							<option value="2012">2012</option>
@@ -151,17 +130,24 @@
 							<option value="2018">2018</option>
 							<option value="2019">2019</option>
 						</select>
-					</td>
-				</tr>
-				<tr>
-				 	<td>Kortnummer:</td>
-				  	<td><input type="text" name="cardNumber" size="29" class="required"></p></td>
-				  	<td align="center">CVC2:</td>
-				  	<td><input type="text" name="cvc2Code" size="5" class="required"></p></td>
-				  	<td><img src="../fileadmin/site_images/questionmark.gif"/></td>
-				</tr>
-			</table>
+				 </td>
+			</tr>
+			<tr>
+				<td>CVC2: </td>
+				<td><input type="text" name="cvc2Code" size="5" class="required"></td>
+			</tr>
+			<tr>
+			 	<td colspan="2"><a valign="top" tabindex="31" href="cvc2.html" target="_blank"> Hva er CVC2?</a></td>
+			</tr>
+		</table>
 		</div>
+		<div class="TERMS">
+			<br/>
+			<input id="acceptTerms" type="radio" name="acceptTerms" value="0" tabindex="30">
+			<label for="acceptTerms"> Jeg har lest og godtar <a tabindex="31" href="Termsandconditions.html" target="_blank">vilkårene</a> for denne bookingen, samt Europarks  <a tabindex="32" href="PrivacyPolicy.html" target="_blank">personvernspolicy.</a></label>
+			<p><input class="submit" type="submit" value="Gå tilbake"/><input class="submit" type="submit" value="Bekreft betaling"/></p>
+		</div>
+
 	</form>
 	</div>
 </div>

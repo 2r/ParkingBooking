@@ -39,42 +39,62 @@
 
 .SUMMARY {
 	margin-top: 10px;
-	width: 80%;
+	margin-bottom: 0px;
+	width: 100%;
 }
 .BOOKING_SUMMARY {
 	margin-top: 10px;
 	margin-bottom: 20px;
+	width: 360px;
 	float: left;
 }
-.USER_SUMMARY {
-	margin-top: 10px;
-	margin-bottom: 20px;
-	float: right;
+.INFORMATION {
+    border-left: 1px solid;
+    float: left;
+    margin-top: 10px;
+    padding-bottom: 30px;
+    padding-left: 70px;
+    width: 400px;
+	
 }
 .PAYMENT {
-	margin-top: 10px;
+	margin-top: 20px;
 	margin-bottom: 20px;
 	width: 100%;
 }
 .CARD_INFO {
 	margin-top: 10px;
 	margin-bottom: 20px;
-	width: 60%;
+	width: 400px;
 	float: left;
+}
+.CVC_INFO {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	width: 220px;
+	float: left;
+	padding-left: 15px;
+}
+
+.TERMS {
+    float: left;
+    margin-bottom: 20px;
+    margin-top: 33px;
+    width: 280px;
 }
 .PAYMENT_INFO {
 	margin-top: 10px;
 	width: 70%;
 	float: left;
 }
-.pricetext2 {
+.PRICETEXT2 {
 	color: #9A75FF;
 	font-size: 20px;
 	text-align: left;
 }
-.payment_image {
-	float: right;
-	margin-top: 80px;
+.PAYMENT_IMAGE {
+	margin-top: 10px;
+	text-align: center;
 }
 .LINE {
 	margin-top: 30px;
