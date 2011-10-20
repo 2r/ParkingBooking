@@ -38,6 +38,12 @@ public class PaymentForm extends VelocityForm{
         addModelVariable("ParkingPlace", parkingPlace);
     }
 	
+	public void setTotalPrice(TimeSpan timeSpan, ParkingPlace parkingPlace) {
+		int totalPrice = Utility.CalculatePrice(timeSpan, parkingPlace);
+		System.out.println("TOT.PRICE: " + totalPrice);
+		addModelVariable("TotalPrice", totalPrice);
+	}
+	
 	@Override
 	protected List<String> getFieldNames() {
 		// TODO Auto-generated method stub

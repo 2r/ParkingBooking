@@ -9,39 +9,37 @@ import no.europark.parkingBooking.entity.ParkingPlace.transportType;
 
 public class ParkingPlaceDaoMock implements ParkingPlaceDao{
 
-	@Override
-	public List<ParkingPlace> getParkingPlaces(String locationCode, TimeSpan timeSpan) {
+	public List<ParkingPlace> getParkingPlaces(String locationCode) {
 		List<ParkingPlace> parkingList = null;
-		
 		if (locationCode.equals("BGO")) {
-			ParkingPlace p1 = new ParkingPlace(	"P1", 
+			ParkingPlace p1 = new ParkingPlace(	"P1 - LONG-TERM", 
 					"../fileadmin/site_images/parkingplaces/p1.gif", 
 					transportType.SHUTTLEBUS, 
 					"hvert 15. min", 
 					"Business eller fritidsparkering for reisende som ønsker enkel, effektiv og bekvem parkering.",
 					"../fileadmin/parking_info/oslo_lufthavn_p2.pdf",
-					1430);
-			ParkingPlace p2 = new ParkingPlace(	"P2", 
+					230);
+			ParkingPlace p2 = new ParkingPlace(	"P2 - EXECUTIVE", 
 					"../fileadmin/site_images/parkingplaces/p2.gif", 
 					transportType.SHUTTLEBUS, 
 					"Vegg i vegg med terminalen, 1-5 min å gå.", 
-					"Langtidsparkering for fattige charterfolk.",
+					"Langtidsparkering for reisende som ønsker rimelig parkering.",
 					"../fileadmin/parking_info/oslo_lufthavn_p2.pdf",
-					1430);
-			ParkingPlace p3 = new ParkingPlace(	"P3", 
+					129);
+			ParkingPlace p3 = new ParkingPlace(	"P3 - EXPRESS", 
 					"../fileadmin/site_images/parkingplaces/p3.gif", 
 					transportType.SHUTTLEBUS, 
 					"hvert 10. min", 
 					"Business eller fritidsparkering for reisende som ønsker enkel, effektiv og bekvem parkering.",
 					"../fileadmin/parking_info/oslo_lufthavn_p2.pdf",
-					830);
-			ParkingPlace p4 = new ParkingPlace(	"P4", 
+					410);
+			ParkingPlace p4 = new ParkingPlace(	"P4 - HOLIDAY", 
 					"../fileadmin/site_images/parkingplaces/p4.gif", 
 					transportType.WALK, 
 					"400m fra terminalen, 1-5 min å gå.", 
 					"Business eller fritidsparkering for reisende som ønsker enkel, effektiv og bekvem parkering.",
 					"../fileadmin/parking_info/oslo_lufthavn_p2.pdf",
-					930);
+					295);
 			
 			parkingList = new ArrayList<ParkingPlace>();
 			parkingList.add(p1);
@@ -49,70 +47,76 @@ public class ParkingPlaceDaoMock implements ParkingPlaceDao{
 			parkingList.add(p3);
 			parkingList.add(p4);
 		} else if (locationCode.equals("OSL")) {
-			ParkingPlace p1 = new ParkingPlace(	"P1", 
+			ParkingPlace p1 = new ParkingPlace(	"P1 - LONG-TERM", 
 					"../fileadmin/site_images/parkingplaces/p1.gif", 
 					transportType.SHUTTLEBUS, 
 					"hvert 15. min", 
 					"Business eller fritidsparkering for reisende som ønsker enkel, effektiv og bekvem parkering.",
 					"../fileadmin/parking_info/oslo_lufthavn_p2.pdf",
-					1320);
-			ParkingPlace p2 = new ParkingPlace(	"P2", 
+					230);
+			ParkingPlace p2 = new ParkingPlace(	"P2 - EXECUTIVE", 
 					"../fileadmin/site_images/parkingplaces/p2.gif", 
-					transportType.WALK, 
+					transportType.SHUTTLEBUS, 
 					"Vegg i vegg med terminalen, 1-5 min å gå.", 
-					"Business eller fritidsparkering for reisende som ønsker enkel, effektiv og bekvem parkering.",
+					"Langtidsparkering for reisende som ønsker rimelig parkering.",
 					"../fileadmin/parking_info/oslo_lufthavn_p2.pdf",
-					1090);
+					129);
 
 			parkingList = new ArrayList<ParkingPlace>();
 			parkingList.add(p1);
 			parkingList.add(p2);
 		} else {
-			ParkingPlace p1 = new ParkingPlace(	"P1", 
-					"../fileadmin/site_images/parkingplaces/p1.gif", 
+			ParkingPlace p2 = new ParkingPlace(	"P2 - EXECUTIVE", 
+					"../fileadmin/site_images/parkingplaces/p2.gif", 
 					transportType.SHUTTLEBUS, 
-					"hvert 15. min", 
-					"Business eller fritidsparkering for reisende som ønsker enkel, effektiv og bekvem parkering.",
+					"Vegg i vegg med terminalen, 1-5 min å gå.", 
+					"Langtidsparkering for reisende som ønsker rimelig parkering.",
 					"../fileadmin/parking_info/oslo_lufthavn_p2.pdf",
-					1320);
+					129);
 			parkingList = new ArrayList<ParkingPlace>();
-			parkingList.add(p1);
+			parkingList.add(p2);
 		}
 		return parkingList;
+	}
+	
+	
+	@Override
+	public List<ParkingPlace> getParkingPlaces(String locationCode, TimeSpan timeSpan) {
+		return getParkingPlaces(locationCode);
 	}
 
 	@Override
 	public ParkingPlace getParkingPlace(String name) {
 		List<ParkingPlace> parkingList = null;
 		ParkingPlace parkingPlace = null;
-		ParkingPlace p1 = new ParkingPlace(	"P1", 
+		ParkingPlace p1 = new ParkingPlace(	"P1 - LONG-TERM", 
 				"../fileadmin/site_images/parkingplaces/p1.gif", 
 				transportType.SHUTTLEBUS, 
 				"hvert 15. min", 
 				"Business eller fritidsparkering for reisende som ønsker enkel, effektiv og bekvem parkering.",
 				"../fileadmin/parking_info/oslo_lufthavn_p2.pdf",
-				1430);
-		ParkingPlace p2 = new ParkingPlace(	"P2", 
+				230);
+		ParkingPlace p2 = new ParkingPlace(	"P2 - EXECUTIVE", 
 				"../fileadmin/site_images/parkingplaces/p2.gif", 
 				transportType.SHUTTLEBUS, 
 				"Vegg i vegg med terminalen, 1-5 min å gå.", 
 				"Langtidsparkering for fattige charterfolk.",
 				"../fileadmin/parking_info/oslo_lufthavn_p2.pdf",
-				1430);
-		ParkingPlace p3 = new ParkingPlace(	"P3", 
+				129);
+		ParkingPlace p3 = new ParkingPlace(	"P3 - EXPRESS", 
 				"../fileadmin/site_images/parkingplaces/p3.gif", 
 				transportType.SHUTTLEBUS, 
 				"hvert 10. min", 
 				"Business eller fritidsparkering for reisende som ønsker enkel, effektiv og bekvem parkering.",
 				"../fileadmin/parking_info/oslo_lufthavn_p2.pdf",
-				830);
-		ParkingPlace p4 = new ParkingPlace(	"P4", 
+				410);
+		ParkingPlace p4 = new ParkingPlace(	"P4 - HOLIDAY", 
 				"../fileadmin/site_images/parkingplaces/p4.gif", 
 				transportType.WALK, 
 				"400m fra terminalen, 1-5 min å gå.", 
 				"Business eller fritidsparkering for reisende som ønsker enkel, effektiv og bekvem parkering.",
 				"../fileadmin/parking_info/oslo_lufthavn_p2.pdf",
-				930);
+				295);
 		
 		parkingList = new ArrayList<ParkingPlace>();
 		parkingList.add(p1);

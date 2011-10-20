@@ -32,7 +32,7 @@
 				</tr>
 				<tr>
 				  <td>Sted:</td>
-				  <td>$Location.locationName ($Location.locationCode)</td>
+				  <td>$Location.locationName</td>
 				</tr>
 				<tr>
 				  <td>Valgt parkering:</td>
@@ -48,7 +48,7 @@
 				</tr>
 				<tr>
 				  <td><p>Total å betale:</td>
-				  <td><p class="PRICETEXT2">1350,-</p></td>
+				  <td><p class="PRICETEXT2">$TotalPrice,-</p></td>
 				</tr>
 			  </table>
 		</div>	

@@ -19,7 +19,8 @@ public class ParkingOptionsForm extends VelocityForm{
         renderVelocityTemplate(writer, "/parking/parkingoptions.html.vm");
     }
 	
-	public void setParkingPlaces(List<ParkingPlace> parkingPlaces) {
+	public void setParkingPlaces(List<ParkingPlace> parkingPlaces, int numberOfDays) {
+		addModelVariable("numberOfDays", numberOfDays);
         addModelVariable("parkingPlaces", parkingPlaces);
     }
 	

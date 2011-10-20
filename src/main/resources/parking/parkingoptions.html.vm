@@ -76,7 +76,8 @@
 						</div>
 						<div class="PRICE">
 							<p class="subheading">Pris inkl. mva:</p>
-							<p class="pricetext">${parkingPlace.pricePerDay},-</p>
+							#set ($totalPrice = ${parkingPlace.pricePerDay} * $numberOfDays)
+							<p class="pricetext">$totalPrice,-</p>
 						</div>
 						<div class="BUTTON">
 							<input type="hidden" name="parkingPlace" value="${parkingPlace.name}">

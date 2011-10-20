@@ -1,8 +1,9 @@
 #include("./src/main/resources/parking/header.vm")
 <div id="tabs-1">
+<div class="blueheader">Vennligst logg inn</div>
 	<div class="loginbox clearfix">
 		<form action="createuser.html" method="post">
-		  <div class="blueheader">Vennligst logg inn</div>
+		  
 		  	<table id="logintable">
 		    <tr>
 		      <td width="20px">&nbsp;</td>
@@ -72,16 +73,16 @@
 		  </table>
 		</form>
 		<br/>					
-		<div class="logininfo clearfix">
+	</div>
+	<div class="logininfo clearfix">
 			<div class="infoimg clearfix">
 				<img src="../fileadmin/site_images/info.png" alt="Informasjon"/>
 			</div>
 			<div class="infotext clearfix">
-				Har du ikke benyttet EuroPark Online Booking tidligere må du registrere deg som ny bruker for å kunne bestille. <br/><br/>
+				Har du ikke benyttet EuroPark Online Booking tidligere må du registrere deg som ny bruker for å kunne bestille. <br/>
 		  		Dersom du allerede er e-kvitteringskunde kan du bruke samme brukernavn og passord.
 		  	</div>
 		</div>
-	</div>
 </div>
 <div id="tabs-2">
 	#include("./src/main/resources/parking/information.vm")

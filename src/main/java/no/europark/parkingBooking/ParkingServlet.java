@@ -3,6 +3,7 @@ package no.europark.parkingBooking;
 import java.io.IOException;  
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import javax.servlet.ServletException;
@@ -39,7 +40,11 @@ public class ParkingServlet extends HttpServlet{
 		resp.setContentType("text/html");
 		PrintWriter writer = resp.getWriter();
 		if (req.getPathInfo().equals("/parkingoptions.html")) {
-			showParkingOptions(req, writer);
+			try {
+				showParkingOptions(req, writer);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 		} else if (req.getPathInfo().equals("/login.html")) {
 			addParkingPlaceToBooking(req);
 			LoginForm lform = new LoginForm(req);
@@ -55,6 +60,7 @@ public class ParkingServlet extends HttpServlet{
 			pform.setLocation(booking.getLocation());
 			pform.setParkingPlace(booking.getParkingPlace());
 			pform.setTimeSpan(booking.getTimeSpan());
+			pform.setTotalPrice(booking.getTimeSpan(), booking.getParkingPlace());
 			pform.show(writer);
 		} else if (req.getPathInfo().equals("/receipt.html")) {
 			addUserToBooking(req);
@@ -108,12 +114,11 @@ public class ParkingServlet extends HttpServlet{
 		return booking;
 	}
 	
-	private void showParkingOptions(HttpServletRequest req, PrintWriter writer) throws IOException {
-		String dateFrom = req.getParameter("dateFrom"); 
-		String dateTo = req.getParameter("dateTo");
+	private void showParkingOptions(HttpServletRequest req, PrintWriter writer) throws Exception {
+		Date dateFrom = Utility.stringToDate(req.getParameter("dateFrom")); 
+		Date dateTo = Utility.stringToDate(req.getParameter("dateTo"));
 		String hoursFrom = req.getParameter("hoursFrom");
 		String hoursTo = req.getParameter("hoursTo");
-		System.out.println("TRALAlA: " + hoursFrom + "---" + hoursTo);
 		TimeSpan timeSpan = new TimeSpan(dateFrom, dateTo, hoursFrom, hoursTo);
 		addTimeSpanToBooking(req, timeSpan);
 		
@@ -130,7 +135,7 @@ public class ParkingServlet extends HttpServlet{
 							req.getParameter("dateTo"),
 							timeListHTMLGenerator(req.getParameter("hoursTo")),
 							locationListHTMLGenerator(locationCode, locationDao.getLocations()));
-		form.setParkingPlaces(parkingPlaceDao.getParkingPlaces(locationCode, timeSpan));
+		form.setParkingPlaces(parkingPlaceDao.getParkingPlaces(locationCode, timeSpan), Utility.daysBetween(dateFrom, dateTo));
 		form.show(writer);
 	}
 	

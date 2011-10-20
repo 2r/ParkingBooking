@@ -1,32 +1,34 @@
 package no.europark.parkingBooking.entity;
 
+import java.util.Date;
+
 public class TimeSpan {
 	
-	private String dateFrom;
-	private String dateTo;
+	private Date dateFrom;
+	private Date dateTo;
 	private String hoursFrom;
 	private String hoursTo;
 	
-	public TimeSpan(String dateFrom, String dateTo, String hoursFrom, String hoursTo) {
+	public TimeSpan(Date dateFrom, Date dateTo, String hoursFrom, String hoursTo) {
 		this.dateFrom = dateFrom;
 		this.dateTo = dateTo;
 		this.hoursFrom = hoursFrom;
 		this.hoursTo = hoursTo;
 	}
 
-	public String getDateFrom() {
+	public Date getDateFrom() {
 		return dateFrom;
 	}
 
-	public void setDateFrom(String dateFrom) {
+	public void setDateFrom(Date dateFrom) {
 		this.dateFrom = dateFrom;
 	}
 
-	public String getDateTo() {
+	public Date getDateTo() {
 		return dateTo;
 	}
 
-	public void setDateTo(String dateTo) {
+	public void setDateTo(Date dateTo) {
 		this.dateTo = dateTo;
 	}
 

@@ -5,9 +5,9 @@
 		  <div class="blueheader">Registrering av ny bruker</div>
 			<table id="logintable">
 			<tr>
-			  <td width="20%">&nbsp;</td>
+			  <td width="15%">&nbsp;</td>
 			  <td width="1%">&nbsp;</td>
-			  <td width="79%">&nbsp;</td>
+			  <td width="84%">&nbsp;</td>
 			</tr>
 			<tr>
 			  <td>Fornavn</td>
