@@ -1,35 +1,39 @@
 #include("./src/main/resources/parking/header.vm")
 <div id="tabs-1">
-	<div class="createuserbox clearfix">
-		  <div class="blueheader">Kvittering</div>
-			<table id="logintable">
-			<tr>
-			  <td width="20%">&nbsp;</td>
-			  <td width="80%">&nbsp;</td>
-			</tr>
-			<tr>
-			  <td>Fornavn</td>
-			  <td>$User.firstName</td>
-			</tr>
-			<tr>
-			  <td>Etternavn</td>
-			  <td>$User.lastName</td>
-			</tr>
-			<tr>
-			  <td>E-postadresse</td>
-			  <td>$User.email</td>
-			</tr>
-			<tr>
-			  <td>Passord</td>
-			  <td>$User.password</td>
-			</tr>
-			<tr>
-			<tr>
-			  <td>Mobilnr.</td>
-			  <td>$User.mobilePhone</td>
-			</tr>
-		  </table>
+<div class="SUMMARY_RECEIPT clearfix">
+		  <div class="blueheader">Takk for din booking!</div>
+		  <p>En bekreftelse er sendt til (epost).</p>
+			<div class="BOOKING_SUMMARY clearfix">
+			<p class="subheading">Din booking:</p>
+			<table id="ordertable">
+				<tr>
+				  <td width="50%">&nbsp;</td>
+				  <td width="50%">&nbsp;</td>
+				</tr>
+				<tr>
+				  <td>Sted:</td>
+				  <td>Bergen / Flesland (BGO)</td>
+				</tr>
+				<tr>
+				  <td>Valgt parkering:</td>
+				  <td>P1 - LONG-TERM</td>
+				</tr>
+				<tr>
+				  <td>Fra:</td>
+				  <td>11/10/2011 - 17:00</td>
+				</tr>
+				<tr>
+				  <td>Til:</td>
+				  <td>12/10/2011 - 17:00</td>
+				</tr>
+				<tr>
+				  <td>Betalt:</td>
+				  <td>1350,-</td>
+				</tr>
+			  </table>
+			<br/>
 	</div>
+</div>
 </div>
 <div id="tabs-2">
 	#include("./src/main/resources/parking/information.vm")

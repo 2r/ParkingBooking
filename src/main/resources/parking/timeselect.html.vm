@@ -36,6 +36,7 @@
 								</select>
 							</div>
 						<br/>
+						
 						<div class="SEARCH_BUTTON">
 							<input type="image" src="../fileadmin/site_images/search-now.png" alt="Search Now"/>
 						</div> 
