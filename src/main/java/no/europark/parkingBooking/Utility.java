@@ -17,7 +17,7 @@ public class Utility {
 	}
 	
 	public static String dateToString(Date date) throws Exception {
-		SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy");
+		SimpleDateFormat formatter = new SimpleDateFormat("dd.MM-yyyy");
 		return formatter.format(date);
 	}
 	

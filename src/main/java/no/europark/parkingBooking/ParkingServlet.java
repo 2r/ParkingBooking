@@ -70,9 +70,21 @@ public class ParkingServlet extends HttpServlet{
 			pform.setTotalPrice(booking.getTimeSpan(), booking.getParkingPlace());
 			pform.show(writer);
 		} else if (req.getPathInfo().equals("/receipt.html")) {
-			addUserToBooking(req);
 			ReceiptForm rform = new ReceiptForm(req);
-			rform.setUser(getBooking(req).getUser());
+			Booking booking = getBooking(req);
+			rform.setUser(booking.getUser());
+			System.out.println("USER" + booking.getUser().getEmail());
+			rform.setLocation(booking.getLocation());
+			rform.setParkingPlace(booking.getParkingPlace());
+			try {
+				rform.setDateFrom(Utility.dateToString(booking.getTimeSpan().getDateFrom()));
+				rform.setDateTo(Utility.dateToString(booking.getTimeSpan().getDateTo()));
+				rform.setHoursFrom(booking.getTimeSpan().getHoursFrom());
+				rform.setHoursTo(booking.getTimeSpan().getHoursTo());
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			rform.setTotalPrice(booking.getTimeSpan(), booking.getParkingPlace());
 			rform.show(writer);
 		}
 	}
