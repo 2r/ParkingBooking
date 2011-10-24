@@ -73,7 +73,6 @@ public class ParkingServlet extends HttpServlet{
 			ReceiptForm rform = new ReceiptForm(req);
 			Booking booking = getBooking(req);
 			rform.setUser(booking.getUser());
-			System.out.println("USER" + booking.getUser().getEmail());
 			rform.setLocation(booking.getLocation());
 			rform.setParkingPlace(booking.getParkingPlace());
 			try {

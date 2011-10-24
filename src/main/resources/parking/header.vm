@@ -16,26 +16,11 @@
 	<script type="text/javascript" src="../fileadmin/site_js/validation_messages_no.js"></script>
 	<script>
 		$(document).ready(function(){
-		$("#newUserForm").validate({
-        rules :
-            myDate : {
-                australianDate : true
-            }
-    	});
+		$("#newUserForm").validate();
 
 	});
 	</script>
-	<script>
-		$(document).ready(function(){
-			$.validator.addMethod(
-   			 	"australianDate",
-    			function(value, element) {
-        		return value.match(/^\d\d?\/\d\d?\/\d\d\d\d$/);
-    	},
-    	"Please enter a date in the format dd/mm/yyyy"
-	);
 	
-	</script>
 	
 	
 	<script>
@@ -54,29 +39,33 @@
 			$( "#tabs" ).tabs();
 			
 			$('#datepicker').datepicker({
-				dateFormat: 'dd.mm.yy',
 				showOn: "button",
 				buttonImage: "../fileadmin/site_css/images/calendar.gif",
-				buttonImageOnly: true
+				buttonImageOnly: true,
+				minDate: 0, 
+				maxDate: "+12M +10D"
 			});
 			$('#datepicker2').datepicker({
-				dateFormat: 'dd.mm.yy',
 				showOn: "button",
 				buttonImage: "../fileadmin/site_css/images/calendar.gif",
-				buttonImageOnly: true
+				buttonImageOnly: true,
+				minDate: 0, 
+				maxDate: "+12M +10D"
 			});
 			$( "#dateTo" ).datepicker({
-				dateFormat: 'dd.mm.yy',
 				showOn: "button",
 				buttonImage: "../fileadmin/site_css/images/calendar.gif",
-				buttonImageOnly: true
+				buttonImageOnly: true,
+				minDate: 0, 
+				maxDate: "+12M +10D"
 				
 			});
 			$( "#dateFrom" ).datepicker({
-				dateFormat: 'dd.mm.yy',
 				showOn: "button",
 				buttonImage: "../fileadmin/site_css/images/calendar.gif",
-				buttonImageOnly: true
+				buttonImageOnly: true,
+				minDate: 0, 
+				maxDate: "+12M +10D"
 				
 			});
 	 

@@ -14,7 +14,8 @@
 				<div class="DATEOPT clearfix">
 						<div class="DATE_container">
 							<p class="subheading">Fra dato</p>
-							<input type="text" id="datepicker" name="dateFrom" class="required dateISO"></p>
+							<input type="text" id="datepicker" name="dateFrom" class="required date"></p>
+
 							<div class="TIME clearfix">
 							Klokken
 								<select name="hoursFrom">
