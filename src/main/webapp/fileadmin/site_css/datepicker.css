@@ -17,14 +17,13 @@
 
 .DATE_container {
 	float: left;
-	width: 250px;
+	margin-right: 40px;
 
 }
 
 .TIME {
 	float: right;
 	margin-top: 4px;
-	margin-right: 85px;
 }
 
 .TIME select {
@@ -33,7 +32,6 @@
 
 .SEARCH_BUTTON {
 	margin-top: 20px;
-	margin-right: 85px;
 	float: right;
 }
 

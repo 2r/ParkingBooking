@@ -37,23 +37,31 @@
 			$('#datepicker').datepicker({
 				showOn: "button",
 				buttonImage: "../fileadmin/site_css/images/calendar.gif",
-				buttonImageOnly: true
+				buttonImageOnly: true,
+				minDate: 0, 
+				maxDate: "+12M +10D"
 			});
 			$('#datepicker2').datepicker({
 				showOn: "button",
 				buttonImage: "../fileadmin/site_css/images/calendar.gif",
-				buttonImageOnly: true
+				buttonImageOnly: true,
+				minDate: 0, 
+				maxDate: "+12M +10D"
 			});
 			$( "#dateTo" ).datepicker({
 				showOn: "button",
 				buttonImage: "../fileadmin/site_css/images/calendar.gif",
-				buttonImageOnly: true
+				buttonImageOnly: true,
+				minDate: 0, 
+				maxDate: "+12M +10D"
 				
 			});
 			$( "#dateFrom" ).datepicker({
 				showOn: "button",
 				buttonImage: "../fileadmin/site_css/images/calendar.gif",
-				buttonImageOnly: true
+				buttonImageOnly: true,
+				minDate: 0, 
+				maxDate: "+12M +10D"
 				
 			});
 	 
